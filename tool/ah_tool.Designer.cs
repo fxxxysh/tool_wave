@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             Iocomp.Classes.PlotChannelTrace plotChannelTrace1 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace2 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace3 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace4 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace5 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace6 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace7 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace8 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace9 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace10 = new Iocomp.Classes.PlotChannelTrace();
             Iocomp.Classes.PlotDataCursorXY plotDataCursorXY1 = new Iocomp.Classes.PlotDataCursorXY();
             Iocomp.Classes.PlotDataView plotDataView1 = new Iocomp.Classes.PlotDataView();
             Iocomp.Classes.PlotLabelBasic plotLabelBasic1 = new Iocomp.Classes.PlotLabelBasic();
@@ -48,10 +57,50 @@
             // wave_plot
             // 
             this.wave_plot.LoadingBegin();
+            this.wave_plot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             plotChannelTrace1.Color = System.Drawing.Color.Red;
             plotChannelTrace1.Name = "Channel 1";
-            plotChannelTrace1.TitleText = "Channel 1";
+            plotChannelTrace1.TitleText = "CH1";
+            plotChannelTrace2.Color = System.Drawing.Color.Blue;
+            plotChannelTrace2.Name = "Channel 2";
+            plotChannelTrace2.TitleText = "CH2";
+            plotChannelTrace3.Color = System.Drawing.Color.Lime;
+            plotChannelTrace3.Name = "Channel 3";
+            plotChannelTrace3.TitleText = "CH3";
+            plotChannelTrace4.Color = System.Drawing.Color.Yellow;
+            plotChannelTrace4.Name = "Channel 4";
+            plotChannelTrace4.TitleText = "CH4";
+            plotChannelTrace5.Color = System.Drawing.Color.Aqua;
+            plotChannelTrace5.Name = "Channel 5";
+            plotChannelTrace5.TitleText = "CH5";
+            plotChannelTrace6.Color = System.Drawing.Color.White;
+            plotChannelTrace6.Name = "Channel 6";
+            plotChannelTrace6.TitleText = "CH6";
+            plotChannelTrace7.Color = System.Drawing.Color.Red;
+            plotChannelTrace7.Name = "Channel 7";
+            plotChannelTrace7.TitleText = "CH7";
+            plotChannelTrace8.Color = System.Drawing.Color.Blue;
+            plotChannelTrace8.Name = "Channel 8";
+            plotChannelTrace8.TitleText = "CH8";
+            plotChannelTrace9.Color = System.Drawing.Color.Lime;
+            plotChannelTrace9.Name = "Channel 9";
+            plotChannelTrace9.TitleText = "CH9";
+            plotChannelTrace10.Color = System.Drawing.Color.Yellow;
+            plotChannelTrace10.Name = "Channel 10";
+            plotChannelTrace10.TitleText = "CH10";
             this.wave_plot.Channels.Add(plotChannelTrace1);
+            this.wave_plot.Channels.Add(plotChannelTrace2);
+            this.wave_plot.Channels.Add(plotChannelTrace3);
+            this.wave_plot.Channels.Add(plotChannelTrace4);
+            this.wave_plot.Channels.Add(plotChannelTrace5);
+            this.wave_plot.Channels.Add(plotChannelTrace6);
+            this.wave_plot.Channels.Add(plotChannelTrace7);
+            this.wave_plot.Channels.Add(plotChannelTrace8);
+            this.wave_plot.Channels.Add(plotChannelTrace9);
+            this.wave_plot.Channels.Add(plotChannelTrace10);
+            this.wave_plot.ContextMenusEnabled = false;
             plotDataCursorXY1.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
             plotDataCursorXY1.Name = "Data-Cursor 1";
             plotDataCursorXY1.TitleText = "Data-Cursor 1";
@@ -62,7 +111,10 @@
             plotLabelBasic1.DockOrder = 0;
             plotLabelBasic1.Name = "Label 1";
             plotLabelBasic1.TitleText = "Label 1";
+            plotLabelBasic1.Visible = false;
             this.wave_plot.Labels.Add(plotLabelBasic1);
+            plotLegendBasic1.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Far;
+            plotLegendBasic1.DockMargin = 0;
             plotLegendBasic1.DockOrder = 0;
             plotLegendBasic1.Name = "Legend 1";
             plotLegendBasic1.TitleText = "Legend 1";
@@ -135,7 +187,7 @@
             this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabPage_device.Location = new System.Drawing.Point(0, 42);
             this.TabPage_device.Name = "TabPage_device";
-            this.TabPage_device.Size = new System.Drawing.Size(1015, 524);
+            this.TabPage_device.Size = new System.Drawing.Size(900, 524);
             this.TabPage_device.TabIndex = 2;
             this.TabPage_device.TabItemImage = null;
             this.TabPage_device.Text = "设备";
@@ -146,7 +198,7 @@
             this.TabPage_data.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TabPage_data.Location = new System.Drawing.Point(0, 42);
             this.TabPage_data.Name = "TabPage_data";
-            this.TabPage_data.Size = new System.Drawing.Size(1015, 524);
+            this.TabPage_data.Size = new System.Drawing.Size(900, 524);
             this.TabPage_data.TabIndex = 1;
             this.TabPage_data.TabItemImage = null;
             this.TabPage_data.Text = "数据";
