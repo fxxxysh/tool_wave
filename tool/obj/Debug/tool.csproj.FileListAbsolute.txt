@@ -1,0 +1,12 @@
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.exe.config
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.exe
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.pdb
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\Iocomp.Instrumentation.WF40.Common.dll
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\Iocomp.Instrumentation.WF40.Plot.dll
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.ah_tool.resources
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.Properties.Resources.resources
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.csproj.GenerateResource.Cache
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.exe.licenses
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.csproj.CoreCompileInputs.cache
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.exe
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.pdb
