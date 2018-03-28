@@ -35,61 +35,147 @@
             Iocomp.Classes.PlotLegendBasic plotLegendBasic1 = new Iocomp.Classes.PlotLegendBasic();
             Iocomp.Classes.PlotXAxis plotXAxis1 = new Iocomp.Classes.PlotXAxis();
             Iocomp.Classes.PlotYAxis plotYAxis1 = new Iocomp.Classes.PlotYAxis();
-            this.plot1 = new Iocomp.Instrumentation.Plotting.Plot();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ah_tool));
+            this.wave_plot = new Iocomp.Instrumentation.Plotting.Plot();
+            this.TabControl_func = new CCWin.SkinControl.SkinTabControl();
+            this.TabPage_wave = new CCWin.SkinControl.SkinTabPage();
+            this.TabPage_device = new CCWin.SkinControl.SkinTabPage();
+            this.TabPage_data = new CCWin.SkinControl.SkinTabPage();
+            this.TabControl_func.SuspendLayout();
+            this.TabPage_wave.SuspendLayout();
             this.SuspendLayout();
             // 
-            // plot1
+            // wave_plot
             // 
-            this.plot1.LoadingBegin();
+            this.wave_plot.LoadingBegin();
             plotChannelTrace1.Color = System.Drawing.Color.Red;
             plotChannelTrace1.Name = "Channel 1";
             plotChannelTrace1.TitleText = "Channel 1";
-            this.plot1.Channels.Add(plotChannelTrace1);
+            this.wave_plot.Channels.Add(plotChannelTrace1);
             plotDataCursorXY1.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
             plotDataCursorXY1.Name = "Data-Cursor 1";
             plotDataCursorXY1.TitleText = "Data-Cursor 1";
-            this.plot1.DataCursors.Add(plotDataCursorXY1);
+            this.wave_plot.DataCursors.Add(plotDataCursorXY1);
             plotDataView1.Name = "Data-View 1";
             plotDataView1.TitleText = "Data-View 1";
-            this.plot1.DataViews.Add(plotDataView1);
+            this.wave_plot.DataViews.Add(plotDataView1);
             plotLabelBasic1.DockOrder = 0;
             plotLabelBasic1.Name = "Label 1";
             plotLabelBasic1.TitleText = "Label 1";
-            this.plot1.Labels.Add(plotLabelBasic1);
+            this.wave_plot.Labels.Add(plotLabelBasic1);
             plotLegendBasic1.DockOrder = 0;
             plotLegendBasic1.Name = "Legend 1";
             plotLegendBasic1.TitleText = "Legend 1";
-            this.plot1.Legends.Add(plotLegendBasic1);
-            this.plot1.Location = new System.Drawing.Point(36, 80);
-            this.plot1.Name = "plot1";
-            this.plot1.Size = new System.Drawing.Size(975, 455);
-            this.plot1.TabIndex = 0;
+            this.wave_plot.Legends.Add(plotLegendBasic1);
+            this.wave_plot.Location = new System.Drawing.Point(0, 0);
+            this.wave_plot.Name = "wave_plot";
+            this.wave_plot.Size = new System.Drawing.Size(1012, 524);
+            this.wave_plot.TabIndex = 0;
             plotXAxis1.DockOrder = 0;
             plotXAxis1.Name = "X-Axis 1";
             plotXAxis1.Title.Text = "X-Axis 1";
-            this.plot1.XAxes.Add(plotXAxis1);
+            this.wave_plot.XAxes.Add(plotXAxis1);
             plotYAxis1.DockOrder = 0;
             plotYAxis1.Name = "Y-Axis 1";
             plotYAxis1.Title.Text = "Y-Axis 1";
-            this.plot1.YAxes.Add(plotYAxis1);
-            this.plot1.LoadingEnd();
+            this.wave_plot.YAxes.Add(plotYAxis1);
+            this.wave_plot.LoadingEnd();
+            // 
+            // TabControl_func
+            // 
+            this.TabControl_func.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TabControl_func.AnimatorType = CCWin.SkinControl.AnimationType.HorizSlide;
+            this.TabControl_func.CloseRect = new System.Drawing.Rectangle(2, 2, 12, 12);
+            this.TabControl_func.Controls.Add(this.TabPage_wave);
+            this.TabControl_func.Controls.Add(this.TabPage_device);
+            this.TabControl_func.Controls.Add(this.TabPage_data);
+            this.TabControl_func.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TabControl_func.HeadBack = null;
+            this.TabControl_func.ImgTxtOffset = new System.Drawing.Point(0, 0);
+            this.TabControl_func.ItemSize = new System.Drawing.Size(50, 42);
+            this.TabControl_func.Location = new System.Drawing.Point(-1, -1);
+            this.TabControl_func.Margin = new System.Windows.Forms.Padding(0);
+            this.TabControl_func.Multiline = true;
+            this.TabControl_func.Name = "TabControl_func";
+            this.TabControl_func.PageArrowDown = null;
+            this.TabControl_func.PageArrowHover = null;
+            this.TabControl_func.PageBaseColor = System.Drawing.Color.Red;
+            this.TabControl_func.PageBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TabControl_func.PageCloseHover = null;
+            this.TabControl_func.PageCloseNormal = null;
+            this.TabControl_func.PageDown = global::tool.Properties.Resources.button_down;
+            this.TabControl_func.PageHover = null;
+            this.TabControl_func.PageHoverTxtColor = System.Drawing.Color.DeepSkyBlue;
+            this.TabControl_func.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Top;
+            this.TabControl_func.PageNorml = null;
+            this.TabControl_func.PageNormlTxtColor = System.Drawing.Color.White;
+            this.TabControl_func.PagePalace = true;
+            this.TabControl_func.SelectedIndex = 0;
+            this.TabControl_func.Size = new System.Drawing.Size(1015, 566);
+            this.TabControl_func.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.TabControl_func.TabIndex = 246;
+            // 
+            // TabPage_wave
+            // 
+            this.TabPage_wave.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_wave.Controls.Add(this.wave_plot);
+            this.TabPage_wave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_wave.Location = new System.Drawing.Point(0, 42);
+            this.TabPage_wave.Name = "TabPage_wave";
+            this.TabPage_wave.Size = new System.Drawing.Size(1015, 524);
+            this.TabPage_wave.TabIndex = 0;
+            this.TabPage_wave.TabItemImage = null;
+            this.TabPage_wave.Text = "波形";
+            // 
+            // TabPage_device
+            // 
+            this.TabPage_device.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_device.Location = new System.Drawing.Point(0, 42);
+            this.TabPage_device.Name = "TabPage_device";
+            this.TabPage_device.Size = new System.Drawing.Size(1015, 524);
+            this.TabPage_device.TabIndex = 2;
+            this.TabPage_device.TabItemImage = null;
+            this.TabPage_device.Text = "设备";
+            // 
+            // TabPage_data
+            // 
+            this.TabPage_data.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_data.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_data.Location = new System.Drawing.Point(0, 42);
+            this.TabPage_data.Name = "TabPage_data";
+            this.TabPage_data.Size = new System.Drawing.Size(1015, 524);
+            this.TabPage_data.TabIndex = 1;
+            this.TabPage_data.TabItemImage = null;
+            this.TabPage_data.Text = "数据";
             // 
             // ah_tool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 583);
-            this.Controls.Add(this.plot1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(57)))), ((int)(((byte)(64)))));
+            this.CausesValidation = false;
+            this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.TabControl_func);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ah_tool";
-            this.Text = "Form1";
+            this.Text = "TOOL";
+            this.TabControl_func.ResumeLayout(false);
+            this.TabPage_wave.ResumeLayout(false);
+            this.TabPage_wave.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Iocomp.Instrumentation.Plotting.Plot plot1;
+        private Iocomp.Instrumentation.Plotting.Plot wave_plot;
+        private CCWin.SkinControl.SkinTabControl TabControl_func;
+        private CCWin.SkinControl.SkinTabPage TabPage_wave;
+        private CCWin.SkinControl.SkinTabPage TabPage_data;
+        private CCWin.SkinControl.SkinTabPage TabPage_device;
     }
 }
 
