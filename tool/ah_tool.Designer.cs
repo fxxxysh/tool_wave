@@ -29,25 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace1 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace2 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace3 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace4 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace5 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace6 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace7 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace8 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace9 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace10 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotDataCursorChannel plotDataCursorChannel1 = new Iocomp.Classes.PlotDataCursorChannel();
-            Iocomp.Classes.PlotDataCursorChannel plotDataCursorChannel2 = new Iocomp.Classes.PlotDataCursorChannel();
-            Iocomp.Classes.PlotDataCursorChannel plotDataCursorChannel3 = new Iocomp.Classes.PlotDataCursorChannel();
-            Iocomp.Classes.PlotDataCursorChannel plotDataCursorChannel4 = new Iocomp.Classes.PlotDataCursorChannel();
-            Iocomp.Classes.PlotDataView plotDataView1 = new Iocomp.Classes.PlotDataView();
-            Iocomp.Classes.PlotLabelBasic plotLabelBasic1 = new Iocomp.Classes.PlotLabelBasic();
-            Iocomp.Classes.PlotLegendBasic plotLegendBasic1 = new Iocomp.Classes.PlotLegendBasic();
-            Iocomp.Classes.PlotXAxis plotXAxis1 = new Iocomp.Classes.PlotXAxis();
-            Iocomp.Classes.PlotYAxis plotYAxis1 = new Iocomp.Classes.PlotYAxis();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace11 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace12 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace13 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace14 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace15 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace16 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace17 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace18 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace19 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace20 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotDataCursorChannels plotDataCursorChannels2 = new Iocomp.Classes.PlotDataCursorChannels();
+            Iocomp.Classes.PlotDataCursorXY plotDataCursorXY2 = new Iocomp.Classes.PlotDataCursorXY();
+            Iocomp.Classes.PlotDataView plotDataView2 = new Iocomp.Classes.PlotDataView();
+            Iocomp.Classes.PlotLabelBasic plotLabelBasic2 = new Iocomp.Classes.PlotLabelBasic();
+            Iocomp.Classes.PlotLegendBasic plotLegendBasic2 = new Iocomp.Classes.PlotLegendBasic();
+            Iocomp.Classes.PlotXAxis plotXAxis2 = new Iocomp.Classes.PlotXAxis();
+            Iocomp.Classes.PlotYAxis plotYAxis2 = new Iocomp.Classes.PlotYAxis();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ah_tool));
             this.wave_plot = new Iocomp.Instrumentation.Plotting.Plot();
             this.TabControl_func = new CCWin.SkinControl.SkinTabControl();
@@ -73,8 +71,9 @@
             this.plotToolBarButton17 = new Iocomp.Classes.PlotToolBarButton();
             this.plotToolBarButton18 = new Iocomp.Classes.PlotToolBarButton();
             this.ToolBar_image = new System.Windows.Forms.ImageList(this.components);
-            this.TabPage_device = new CCWin.SkinControl.SkinTabPage();
             this.TabPage_data = new CCWin.SkinControl.SkinTabPage();
+            this.TabPage_device = new CCWin.SkinControl.SkinTabPage();
+            this.label_test = new System.Windows.Forms.Label();
             this.TabControl_func.SuspendLayout();
             this.TabPage_wave.SuspendLayout();
             this.wave_main_panel.SuspendLayout();
@@ -87,120 +86,105 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wave_plot.AutoSize = false;
-            this.wave_plot.Border.Margin = 0;
+            this.wave_plot.Border.Margin = 1;
             this.wave_plot.Border.Style = Iocomp.Types.BorderStyleControl.None;
-            plotChannelTrace1.Color = System.Drawing.Color.Red;
-            plotChannelTrace1.Name = "Channel 1";
-            plotChannelTrace1.TitleText = "CH1";
-            plotChannelTrace2.Color = System.Drawing.Color.Blue;
-            plotChannelTrace2.Name = "Channel 2";
-            plotChannelTrace2.TitleText = "CH2";
-            plotChannelTrace3.Color = System.Drawing.Color.Lime;
-            plotChannelTrace3.Name = "Channel 3";
-            plotChannelTrace3.TitleText = "CH3";
-            plotChannelTrace4.Color = System.Drawing.Color.Yellow;
-            plotChannelTrace4.Name = "Channel 4";
-            plotChannelTrace4.TitleText = "CH4";
-            plotChannelTrace5.Color = System.Drawing.Color.Aqua;
-            plotChannelTrace5.Name = "Channel 5";
-            plotChannelTrace5.TitleText = "CH5";
-            plotChannelTrace6.Color = System.Drawing.Color.White;
-            plotChannelTrace6.Name = "Channel 6";
-            plotChannelTrace6.TitleText = "CH6";
-            plotChannelTrace7.Color = System.Drawing.Color.Purple;
-            plotChannelTrace7.Name = "Channel 7";
-            plotChannelTrace7.TitleText = "CH7";
-            plotChannelTrace8.Color = System.Drawing.Color.DeepSkyBlue;
-            plotChannelTrace8.Name = "Channel 8";
-            plotChannelTrace8.TitleText = "CH8";
-            plotChannelTrace9.Color = System.Drawing.Color.LightSeaGreen;
-            plotChannelTrace9.Name = "Channel 9";
-            plotChannelTrace9.TitleText = "CH9";
-            plotChannelTrace10.Color = System.Drawing.Color.OliveDrab;
-            plotChannelTrace10.Name = "Channel 10";
-            plotChannelTrace10.TitleText = "CH110";
-            this.wave_plot.Channels.Add(plotChannelTrace1);
-            this.wave_plot.Channels.Add(plotChannelTrace2);
-            this.wave_plot.Channels.Add(plotChannelTrace3);
-            this.wave_plot.Channels.Add(plotChannelTrace4);
-            this.wave_plot.Channels.Add(plotChannelTrace5);
-            this.wave_plot.Channels.Add(plotChannelTrace6);
-            this.wave_plot.Channels.Add(plotChannelTrace7);
-            this.wave_plot.Channels.Add(plotChannelTrace8);
-            this.wave_plot.Channels.Add(plotChannelTrace9);
-            this.wave_plot.Channels.Add(plotChannelTrace10);
-            plotDataCursorChannel1.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
-            plotDataCursorChannel1.Hint.HideOnRelease = true;
-            plotDataCursorChannel1.Name = "Data-Cursor 1";
-            plotDataCursorChannel1.Pointer2Position = -0.46560702864225351D;
-            plotDataCursorChannel1.TitleText = "Data-Cursor 1";
-            plotDataCursorChannel2.ChannelName = "Channel 2";
-            plotDataCursorChannel2.Color = System.Drawing.Color.Blue;
-            plotDataCursorChannel2.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
-            plotDataCursorChannel2.Name = "Data-Cursor 2";
-            plotDataCursorChannel2.TitleText = "Data-Cursor 2";
-            plotDataCursorChannel3.ChannelName = "Channel 3";
-            plotDataCursorChannel3.Color = System.Drawing.Color.Lime;
-            plotDataCursorChannel3.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
-            plotDataCursorChannel3.Name = "Data-Cursor 3";
-            plotDataCursorChannel3.TitleText = "Data-Cursor 3";
-            plotDataCursorChannel4.ChannelName = "Channel 4";
-            plotDataCursorChannel4.Color = System.Drawing.Color.Yellow;
-            plotDataCursorChannel4.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
-            plotDataCursorChannel4.Name = "Data-Cursor 4";
-            plotDataCursorChannel4.TitleText = "Data-Cursor 4";
-            this.wave_plot.DataCursors.Add(plotDataCursorChannel1);
-            this.wave_plot.DataCursors.Add(plotDataCursorChannel2);
-            this.wave_plot.DataCursors.Add(plotDataCursorChannel3);
-            this.wave_plot.DataCursors.Add(plotDataCursorChannel4);
-            plotDataView1.CanFocus = false;
-            plotDataView1.DockMargin = 0;
-            plotDataView1.Name = "Data-View 1";
-            plotDataView1.TitleText = "Data-View 1";
-            this.wave_plot.DataViews.Add(plotDataView1);
+            plotChannelTrace11.Color = System.Drawing.Color.Red;
+            plotChannelTrace11.Name = "Channel 1";
+            plotChannelTrace11.TitleText = "CH1";
+            plotChannelTrace12.Color = System.Drawing.Color.Blue;
+            plotChannelTrace12.Name = "Channel 2";
+            plotChannelTrace12.TitleText = "CH2";
+            plotChannelTrace13.Color = System.Drawing.Color.Lime;
+            plotChannelTrace13.Name = "Channel 3";
+            plotChannelTrace13.TitleText = "CH3";
+            plotChannelTrace14.Color = System.Drawing.Color.Yellow;
+            plotChannelTrace14.Name = "Channel 4";
+            plotChannelTrace14.TitleText = "CH4";
+            plotChannelTrace15.Color = System.Drawing.Color.Aqua;
+            plotChannelTrace15.Name = "Channel 5";
+            plotChannelTrace15.TitleText = "CH5";
+            plotChannelTrace16.Color = System.Drawing.Color.White;
+            plotChannelTrace16.Name = "Channel 6";
+            plotChannelTrace16.TitleText = "CH6";
+            plotChannelTrace17.Color = System.Drawing.Color.Purple;
+            plotChannelTrace17.Name = "Channel 7";
+            plotChannelTrace17.TitleText = "CH7";
+            plotChannelTrace18.Color = System.Drawing.Color.DeepSkyBlue;
+            plotChannelTrace18.Name = "Channel 8";
+            plotChannelTrace18.TitleText = "CH8";
+            plotChannelTrace19.Color = System.Drawing.Color.LightSeaGreen;
+            plotChannelTrace19.Name = "Channel 9";
+            plotChannelTrace19.TitleText = "CH9";
+            plotChannelTrace20.Color = System.Drawing.Color.OliveDrab;
+            plotChannelTrace20.Name = "Channel 10";
+            plotChannelTrace20.TitleText = "CH110";
+            this.wave_plot.Channels.Add(plotChannelTrace11);
+            this.wave_plot.Channels.Add(plotChannelTrace12);
+            this.wave_plot.Channels.Add(plotChannelTrace13);
+            this.wave_plot.Channels.Add(plotChannelTrace14);
+            this.wave_plot.Channels.Add(plotChannelTrace15);
+            this.wave_plot.Channels.Add(plotChannelTrace16);
+            this.wave_plot.Channels.Add(plotChannelTrace17);
+            this.wave_plot.Channels.Add(plotChannelTrace18);
+            this.wave_plot.Channels.Add(plotChannelTrace19);
+            this.wave_plot.Channels.Add(plotChannelTrace20);
+            plotDataCursorChannels2.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
+            plotDataCursorChannels2.Name = "Data-Cursor 2";
+            plotDataCursorChannels2.TitleText = "Data-Cursor 2";
+            plotDataCursorXY2.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
+            plotDataCursorXY2.Name = "Data-Cursor 3";
+            plotDataCursorXY2.TitleText = "Data-Cursor 3";
+            this.wave_plot.DataCursors.Add(plotDataCursorChannels2);
+            this.wave_plot.DataCursors.Add(plotDataCursorXY2);
+            plotDataView2.DockMargin = 0;
+            plotDataView2.Name = "Data-View 1";
+            plotDataView2.TitleText = "Data-View 1";
+            this.wave_plot.DataViews.Add(plotDataView2);
             this.wave_plot.DefaultGridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.wave_plot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.wave_plot.ForeColor = System.Drawing.Color.WhiteSmoke;
-            plotLabelBasic1.DockOrder = 0;
-            plotLabelBasic1.Enabled = false;
-            plotLabelBasic1.Name = "Label 1";
-            plotLabelBasic1.TitleText = "Label 1";
-            plotLabelBasic1.Visible = false;
-            this.wave_plot.Labels.Add(plotLabelBasic1);
-            plotLegendBasic1.CanFocus = false;
-            plotLegendBasic1.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
-            plotLegendBasic1.DockDataViewName = "";
-            plotLegendBasic1.DockMargin = 0;
-            plotLegendBasic1.DockOrder = 0;
-            plotLegendBasic1.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
-            plotLegendBasic1.Name = "Legend 1";
-            plotLegendBasic1.Spacing = 4D;
-            plotLegendBasic1.TitleMargin = 0.5D;
-            plotLegendBasic1.TitleText = "Legend 1";
-            this.wave_plot.Legends.Add(plotLegendBasic1);
+            plotLabelBasic2.DockOrder = 0;
+            plotLabelBasic2.Enabled = false;
+            plotLabelBasic2.Name = "Label 1";
+            plotLabelBasic2.TitleText = "Label 1";
+            plotLabelBasic2.Visible = false;
+            this.wave_plot.Labels.Add(plotLabelBasic2);
+            plotLegendBasic2.CanFocus = false;
+            plotLegendBasic2.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
+            plotLegendBasic2.DockDataViewName = "";
+            plotLegendBasic2.DockMargin = 0;
+            plotLegendBasic2.DockOrder = 0;
+            plotLegendBasic2.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
+            plotLegendBasic2.Name = "Legend 1";
+            plotLegendBasic2.Spacing = 4D;
+            plotLegendBasic2.TitleMargin = 0.5D;
+            plotLegendBasic2.TitleText = "Legend 1";
+            this.wave_plot.Legends.Add(plotLegendBasic2);
             this.wave_plot.Location = new System.Drawing.Point(0, 28);
             this.wave_plot.Margin = new System.Windows.Forms.Padding(0);
             this.wave_plot.Name = "wave_plot";
-            this.wave_plot.Size = new System.Drawing.Size(1012, 500);
+            this.wave_plot.Size = new System.Drawing.Size(1015, 368);
             this.wave_plot.TabIndex = 0;
-            plotXAxis1.CanFocus = false;
-            plotXAxis1.DockOrder = 0;
-            plotXAxis1.Name = "X-Axis 1";
-            plotXAxis1.ScaleDisplay.TickMajor.Length = 6;
-            plotXAxis1.ScaleDisplay.TickMid.TextVisible = false;
-            plotXAxis1.ScaleRange.LimitSpanLowerEnabled = true;
-            plotXAxis1.ScaleRange.Span = 5000D;
-            plotXAxis1.Title.Text = "X-Axis 1";
-            plotXAxis1.Tracking.Enabled = false;
-            this.wave_plot.XAxes.Add(plotXAxis1);
-            plotYAxis1.CanFocus = false;
-            plotYAxis1.DockOrder = 0;
-            plotYAxis1.Name = "Y-Axis 1";
-            plotYAxis1.ScaleDisplay.TickMajor.Length = 6;
-            plotYAxis1.ScaleRange.Min = 500D;
-            plotYAxis1.ScaleRange.Span = 1000D;
-            plotYAxis1.Title.Text = "Y-Axis 1";
-            this.wave_plot.YAxes.Add(plotYAxis1);
+            plotXAxis2.DockOrder = 0;
+            plotXAxis2.Name = "X-Axis 1";
+            plotXAxis2.ScaleDisplay.Margin = 0;
+            plotXAxis2.ScaleDisplay.TextFormatting.Precision = 0;
+            plotXAxis2.ScaleDisplay.TextWidthMinValue = 0D;
+            plotXAxis2.ScaleDisplay.TickMajor.Length = 6;
+            plotXAxis2.ScaleRange.Span = 5000D;
+            plotXAxis2.Title.Text = "X-Axis 1";
+            plotXAxis2.Tracking.Enabled = false;
+            this.wave_plot.XAxes.Add(plotXAxis2);
+            plotYAxis2.DockOrder = 0;
+            plotYAxis2.Name = "Y-Axis 1";
+            plotYAxis2.ScaleDisplay.Margin = 0;
+            plotYAxis2.ScaleDisplay.TextFormatting.Precision = 0;
+            plotYAxis2.ScaleDisplay.TextWidthMinValue = 0D;
+            plotYAxis2.ScaleDisplay.TickMajor.Length = 6;
+            plotYAxis2.ScaleRange.Min = 500D;
+            plotYAxis2.ScaleRange.Span = 1000D;
+            plotYAxis2.Title.Text = "Y-Axis 1";
+            this.wave_plot.YAxes.Add(plotYAxis2);
             this.wave_plot.LoadingEnd();
             // 
             // TabControl_func
@@ -216,7 +200,7 @@
             this.TabControl_func.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.TabControl_func.HeadBack = null;
             this.TabControl_func.ImgTxtOffset = new System.Drawing.Point(0, 0);
-            this.TabControl_func.ItemSize = new System.Drawing.Size(50, 38);
+            this.TabControl_func.ItemSize = new System.Drawing.Size(50, 42);
             this.TabControl_func.Location = new System.Drawing.Point(-1, -1);
             this.TabControl_func.Margin = new System.Windows.Forms.Padding(0);
             this.TabControl_func.Multiline = true;
@@ -235,7 +219,7 @@
             this.TabControl_func.PageNormlTxtColor = System.Drawing.Color.White;
             this.TabControl_func.PagePalace = true;
             this.TabControl_func.SelectedIndex = 0;
-            this.TabControl_func.Size = new System.Drawing.Size(1015, 566);
+            this.TabControl_func.Size = new System.Drawing.Size(1015, 564);
             this.TabControl_func.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl_func.TabIndex = 246;
             // 
@@ -244,9 +228,9 @@
             this.TabPage_wave.BackColor = System.Drawing.Color.SlateGray;
             this.TabPage_wave.Controls.Add(this.wave_main_panel);
             this.TabPage_wave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabPage_wave.Location = new System.Drawing.Point(0, 38);
+            this.TabPage_wave.Location = new System.Drawing.Point(0, 42);
             this.TabPage_wave.Name = "TabPage_wave";
-            this.TabPage_wave.Size = new System.Drawing.Size(1015, 528);
+            this.TabPage_wave.Size = new System.Drawing.Size(1015, 522);
             this.TabPage_wave.TabIndex = 0;
             this.TabPage_wave.TabItemImage = null;
             this.TabPage_wave.Text = "波形";
@@ -257,12 +241,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wave_main_panel.BackColor = System.Drawing.Color.Gainsboro;
-            this.wave_main_panel.Controls.Add(this.wave_plot);
+            this.wave_main_panel.Controls.Add(this.label_test);
             this.wave_main_panel.Controls.Add(this.plotToolBar);
+            this.wave_main_panel.Controls.Add(this.wave_plot);
             this.wave_main_panel.Location = new System.Drawing.Point(0, 0);
             this.wave_main_panel.Margin = new System.Windows.Forms.Padding(0);
             this.wave_main_panel.Name = "wave_main_panel";
-            this.wave_main_panel.Size = new System.Drawing.Size(1015, 528);
+            this.wave_main_panel.Size = new System.Drawing.Size(1015, 498);
             this.wave_main_panel.TabIndex = 1;
             // 
             // plotToolBar
@@ -484,17 +469,6 @@
             this.ToolBar_image.Images.SetKeyName(12, "");
             this.ToolBar_image.Images.SetKeyName(13, "");
             // 
-            // TabPage_device
-            // 
-            this.TabPage_device.BackColor = System.Drawing.Color.SlateGray;
-            this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabPage_device.Location = new System.Drawing.Point(0, 38);
-            this.TabPage_device.Name = "TabPage_device";
-            this.TabPage_device.Size = new System.Drawing.Size(1015, 528);
-            this.TabPage_device.TabIndex = 2;
-            this.TabPage_device.TabItemImage = null;
-            this.TabPage_device.Text = "设备";
-            // 
             // TabPage_data
             // 
             this.TabPage_data.BackColor = System.Drawing.Color.SlateGray;
@@ -506,17 +480,38 @@
             this.TabPage_data.TabItemImage = null;
             this.TabPage_data.Text = "数据";
             // 
+            // TabPage_device
+            // 
+            this.TabPage_device.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_device.Location = new System.Drawing.Point(0, 38);
+            this.TabPage_device.Name = "TabPage_device";
+            this.TabPage_device.Size = new System.Drawing.Size(1015, 528);
+            this.TabPage_device.TabIndex = 2;
+            this.TabPage_device.TabItemImage = null;
+            this.TabPage_device.Text = "设备";
+            // 
+            // label_test
+            // 
+            this.label_test.AutoSize = true;
+            this.label_test.Location = new System.Drawing.Point(66, 431);
+            this.label_test.Name = "label_test";
+            this.label_test.Size = new System.Drawing.Size(72, 20);
+            this.label_test.TabIndex = 2;
+            this.label_test.Text = "label_test";
+            // 
             // ah_tool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(180)))), ((int)(((byte)(138)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(57)))), ((int)(((byte)(64)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1008, 561);
             this.Controls.Add(this.TabControl_func);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ah_tool";
             this.Text = "TOOL";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ah_tool_FormClosing);
             this.TabControl_func.ResumeLayout(false);
             this.TabPage_wave.ResumeLayout(false);
             this.wave_main_panel.ResumeLayout(false);
@@ -553,6 +548,7 @@
         private Iocomp.Classes.PlotToolBarButton plotToolBarButton17;
         private Iocomp.Classes.PlotToolBarButton plotToolBarButton18;
         private System.Windows.Forms.ImageList ToolBar_image;
+        private System.Windows.Forms.Label label_test;
     }
 }
 

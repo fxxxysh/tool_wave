@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSkin">
-      <HintPath>F:\项目管理\2016-08-30\AHRS\软件\vs_project\ahrs_tool_2017-07-15_debug\MotorCtrl\CSkin.dll</HintPath>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SkinUI\CSkin.dll</HintPath>
     </Reference>
     <Reference Include="Iocomp.Instrumentation.WF40.Common, Version=4.0.4.13215, Culture=neutral, PublicKeyToken=096a9279a87304f1" />
     <Reference Include="Iocomp.Instrumentation.WF40.Plot, Version=4.0.4.13282, Culture=neutral, PublicKeyToken=096a9279a87304f1, processorArchitecture=MSIL" />
@@ -57,6 +58,7 @@
     <Compile Include="ah_tool.Designer.cs">
       <DependentUpon>ah_tool.cs</DependentUpon>
     </Compile>
+    <Compile Include="modules\protocol\protocol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ah_tool.resx">
@@ -94,6 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\port_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modules\logger\" />
+    <Folder Include="modules\wave\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
