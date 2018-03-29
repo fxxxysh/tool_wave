@@ -86,9 +86,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\button_down.bmp" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +95,9 @@
     <None Include="Resources\port_open.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="lib\" />
     <Folder Include="modules\logger\" />
     <Folder Include="modules\wave\" />
   </ItemGroup>

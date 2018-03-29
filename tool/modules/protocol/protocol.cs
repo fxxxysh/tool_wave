@@ -11,16 +11,28 @@ namespace tool.modules
 {
     class protocol
     {
-        public void protocol_main()
+        private ah_tool _handler;
+
+        public void action(ah_tool handler)
+        {
+            _handler = handler;
+        }
+
+        public void write_lable(int cnt)
+        {
+            // _handler.Invoke(new Action(() => { write_lable(cnt); }));
+            Action<int> write = (count) => { _handler.lable_func(count.ToString()); };
+            _handler.Invoke(write, cnt);
+        }
+
+        public void task()
         {
             int cnt = 0;
-
-            ah_tool wave = new ah_tool();
 
             while (true)
             {
                 cnt++;
-                //wave.lable_func(cnt.ToString());
+                write_lable(cnt);
                 Thread.Sleep(1000);
             }
         }

@@ -12,3 +12,17 @@ C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.exe
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.pdb
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\CSkin.dll
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\obj\Debug\tool.csprojResolveAssemblyReference.cache
+H:\git\tool_wave\tool\bin\Debug\tool.exe
+H:\git\tool_wave\tool\bin\Debug\tool.pdb
+H:\git\tool_wave\tool\bin\Debug\CSkin.dll
+H:\git\tool_wave\tool\bin\Debug\Iocomp.Instrumentation.WF40.Common.dll
+H:\git\tool_wave\tool\bin\Debug\Iocomp.Instrumentation.WF40.Plot.dll
+H:\git\tool_wave\tool\obj\Debug\tool.csprojResolveAssemblyReference.cache
+H:\git\tool_wave\tool\obj\Debug\tool.ah_tool.resources
+H:\git\tool_wave\tool\obj\Debug\tool.Properties.Resources.resources
+H:\git\tool_wave\tool\obj\Debug\tool.csproj.GenerateResource.cache
+H:\git\tool_wave\tool\obj\Debug\tool.exe.licenses
+H:\git\tool_wave\tool\obj\Debug\tool.csproj.CoreCompileInputs.cache
+H:\git\tool_wave\tool\obj\Debug\tool.csproj.CopyComplete
+H:\git\tool_wave\tool\obj\Debug\tool.exe
+H:\git\tool_wave\tool\obj\Debug\tool.pdb
