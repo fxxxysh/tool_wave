@@ -58,6 +58,7 @@
     <Compile Include="ah_tool.Designer.cs">
       <DependentUpon>ah_tool.cs</DependentUpon>
     </Compile>
+    <Compile Include="frame\serial_port\serial_port.cs" />
     <Compile Include="modules\protocol\protocol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,9 +98,13 @@
   <ItemGroup>
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="device\gnss\" />
     <Folder Include="lib\" />
     <Folder Include="modules\logger\" />
     <Folder Include="modules\wave\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\tool.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

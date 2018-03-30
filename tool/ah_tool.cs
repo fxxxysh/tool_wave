@@ -33,7 +33,7 @@ namespace tool
             // 解析任务
             protocol _protocol = new protocol();
             _protocol.action(this);
-            
+
             Thread th1 = new Thread(_protocol.task);
             th1.Priority = ThreadPriority.AboveNormal;
             th1.Start();
@@ -43,6 +43,16 @@ namespace tool
         private void ah_tool_FormClosing(object sender, FormClosingEventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void com_switch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void com_port_DropDown(object sender, EventArgs e)
+        {
+
         }
     }
 }
