@@ -521,11 +521,11 @@
             this.com_port,
             this.com_baudrate,
             this.com_switch});
-            this.com_toolStrip.Location = new System.Drawing.Point(446, 2);
+            this.com_toolStrip.Location = new System.Drawing.Point(421, 2);
             this.com_toolStrip.Name = "com_toolStrip";
             this.com_toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.com_toolStrip.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.com_toolStrip.Size = new System.Drawing.Size(232, 42);
+            this.com_toolStrip.Size = new System.Drawing.Size(257, 42);
             this.com_toolStrip.TabIndex = 4;
             this.com_toolStrip.Text = "com_toolStrip";
             // 
@@ -536,11 +536,10 @@
             this.com_port.ForeColor = System.Drawing.Color.Black;
             this.com_port.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
             this.com_port.Name = "com_port";
-            this.com_port.Size = new System.Drawing.Size(75, 39);
+            this.com_port.Size = new System.Drawing.Size(100, 39);
             this.com_port.Sorted = true;
             this.com_port.Text = "AUTO";
             this.com_port.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.com_port.DropDown += new System.EventHandler(this.com_port_DropDown);
             // 
             // com_baudrate
             // 
@@ -580,7 +579,6 @@
             this.com_switch.Name = "com_switch";
             this.com_switch.Size = new System.Drawing.Size(39, 39);
             this.com_switch.Text = "端口";
-            this.com_switch.Click += new System.EventHandler(this.com_switch_Click);
             // 
             // com_panel
             // 

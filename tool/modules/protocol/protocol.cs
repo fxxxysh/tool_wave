@@ -9,7 +9,7 @@ using tool;
 
 namespace tool.modules
 {
-    class protocol
+    public class protocol
     {
         private ah_tool _handler;
 
