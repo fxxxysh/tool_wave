@@ -1,4 +1,3 @@
-C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.exe.config
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.exe
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.pdb
 C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\Iocomp.Instrumentation.WF40.Common.dll
@@ -26,3 +25,4 @@ H:\git\tool_wave\tool\obj\Debug\tool.csproj.CoreCompileInputs.cache
 H:\git\tool_wave\tool\obj\Debug\tool.csproj.CopyComplete
 H:\git\tool_wave\tool\obj\Debug\tool.exe
 H:\git\tool_wave\tool\obj\Debug\tool.pdb
+C:\Users\fx\Documents\fx_tools\tool_wave\tool\bin\Debug\tool.exe.config
