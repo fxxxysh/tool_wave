@@ -11,19 +11,52 @@ using System.Threading;
 using System.Messaging;
 using System.IO.Ports;
 using System.Text.RegularExpressions;
-using tool.modules;
+using Iocomp.Instrumentation.Plotting;
+using Iocomp.Classes;
+
 using tool.frame;
 
 namespace tool
 {
     public partial class ah_tool : Form
     {
-        public protocol _protocol; //解析
         public serial_port _serial; //串口
+        public wave_form _wave; //波形窗口
 
-        public void lable_func(String str)
+        public Plot _plot
         {
-            label_test.Text = str;
+            get { return wave_plot; }
+            set { wave_plot = value; }
+        }
+
+        public PlotToolBarStandard _plotTool
+        {
+            get { return plotToolBar; }
+            set { plotToolBar = value; }
+        }
+
+        public PlotToolBarButton _track
+        {
+            get { return plotToolBarButton1; }
+            set { plotToolBarButton1 = value; }
+        }
+        
+        public ToolStripComboBox _com_port
+        {
+            get { return com_port; }
+            set { com_port = value; }
+        }
+
+        public ToolStripComboBox _com_baudrate
+        {
+            get { return com_baudrate; }
+            set { com_baudrate = value; }
+        }
+
+        public ToolStripButton _com_switch
+        {
+            get { return com_switch; }
+            set { com_switch = value; }
         }
 
         // 防止界面切换闪烁
@@ -41,107 +74,32 @@ namespace tool
         {
             InitializeComponent();
 
-            Thread th_start = new Thread(start);
-            th_start.Priority = ThreadPriority.BelowNormal;
+            Thread th_start = new Thread(start)
+            { Priority = ThreadPriority.BelowNormal, IsBackground = true };
             th_start.Start();
         }
-
-        // 串口开关
-        private void com_switch_Click(object sender, EventArgs e)
-        {
-            bool status;
-            string baudrate = com_baudrate.Text;
-            string port_name = com_port.Text;
-
-            //Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
-            //MatchCollection matches = regex.Matches(port_name);
-            //string port = matches[0].Value.Trim('(', ')').Split('-')[0];
-
-            string port = port_name.Split(' ')[0];
-            status = _serial.operate_port(port, baudrate);
-            set_serial_status(status);
-        }
-
-        // 串口端口列表更新
-        private void com_port_DropDown(object sender, EventArgs e)
-        {
-            string[] device_ports = _serial.up_port_list();
-            set_serial_port(device_ports);
-        }
-
-        // 设置串口端口列表
-        public void set_serial_port(string[] device_ports)
-        {
-            bool current_port_sign = false;
-            string current_port = this.com_port.Text;
-
-            if (device_ports.Length != 0)
-            {
-                this.com_port.Items.Clear();
-                this.com_port.Items.Add("AUTO");
-
-                foreach (string ports in device_ports)
-                {
-                    this.com_port.Items.Add(ports);
-
-                    if (current_port == ports)
-                    {
-                        current_port_sign = true;
-                    }
-
-                    this.com_port.Text = device_ports[0];
-                }
-
-                if (current_port_sign)
-                {
-                    this.com_port.Text = current_port;
-                }
-            }
-        }
-
-        // 设置串口状态
-        public void set_serial_status(bool sw)
-        {
-            if (sw)
-            {
-                this.com_switch.Image = Properties.Resources.port_open;
-            }
-            else
-            {
-                this.com_switch.Image = Properties.Resources.port_close;
-            }
-        }
-
-        // 挂载串口
-        private void mount_serial()
+     
+        private void mount()
         {
             _serial = new serial_port(this);
-
-            this.com_switch.Click += new System.EventHandler(com_switch_Click);
-            this.com_port.DropDown += new System.EventHandler(com_port_DropDown);
+            _wave = new wave_form(this);
         }
 
         // 主函数
         public void start()
         {
-            mount_serial();
-
-            // 解析任务
-            _protocol = new protocol();
-            _protocol.action(this);
-
-            // 等待窗口响应完成
-            if (this.IsHandleCreated == true)
+            while (this.IsHandleCreated != true)
             {
-                Thread th1 = new Thread(_protocol.task);
-                th1.Priority = ThreadPriority.AboveNormal;
-                th1.Start();
+                Thread.Sleep(10);
             }
+            mount();
+            Thread.CurrentThread.Abort();
         }
 
         // 窗口关闭
         private void ah_tool_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //_plot.Channels[0].mar
             System.Environment.Exit(0);
         }
     }
