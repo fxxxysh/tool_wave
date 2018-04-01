@@ -60,6 +60,8 @@
     <Compile Include="ah_tool.Designer.cs">
       <DependentUpon>ah_tool.cs</DependentUpon>
     </Compile>
+    <Compile Include="frame\serial_port\serial_port_task.cs" />
+    <Compile Include="frame\wave_form\wave_form..cs" />
     <Compile Include="frame\WMI\wmi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="frame\serial_port\serial_port.cs" />
