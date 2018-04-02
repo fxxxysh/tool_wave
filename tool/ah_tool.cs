@@ -22,6 +22,12 @@ namespace tool
     {
         public serial_port _serial; //串口
         public wave_form _wave; //波形窗口
+        public List<Label> _list;
+
+        public List<Label> _label
+        {
+            get { return _list; }
+        }
 
         public Plot _plot
         {
@@ -83,6 +89,16 @@ namespace tool
         {
             _serial = new serial_port(this);
             _wave = new wave_form(this);
+
+            _list = new List<Label>();
+            _list.Add(label1);
+            _list.Add(label2);
+            _list.Add(label3);
+            _list.Add(label4);
+            _list.Add(label5);
+            _list.Add(label6);
+            _list.Add(label7);
+            _list.Add(label8);
         }
 
         // 主函数
@@ -99,7 +115,6 @@ namespace tool
         // 窗口关闭
         private void ah_tool_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //_plot.Channels[0].mar
             //System.Environment.Exit(0);
         }
     }

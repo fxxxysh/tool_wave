@@ -1,0 +1,12 @@
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\Iocomp.Instrumentation.WF40.Plot.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\Iocomp.Instrumentation.WF40.Plot.pdb
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\Iocomp.Instrumentation.WF40.Common.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\System.Design.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\System.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\System.Drawing.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\bin\Debug\System.Windows.Forms.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\obj\Debug\Iocomp.Instrumentation.WF40.Plot.csprojResolveAssemblyReference.cache
+H:\git\tool_wave\tool\lib\Iocomp\plot\obj\Debug\Iocomp.Instrumentation.WF40.Plot.csproj.CoreCompileInputs.cache
+H:\git\tool_wave\tool\lib\Iocomp\plot\obj\Debug\Iocomp.Instrumentation.WF40.Plot.csproj.CopyComplete
+H:\git\tool_wave\tool\lib\Iocomp\plot\obj\Debug\Iocomp.Instrumentation.WF40.Plot.dll
+H:\git\tool_wave\tool\lib\Iocomp\plot\obj\Debug\Iocomp.Instrumentation.WF40.Plot.pdb

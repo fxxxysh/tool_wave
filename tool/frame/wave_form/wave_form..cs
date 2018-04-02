@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using Iocomp.Instrumentation.Plotting;
+using Iocomp.Classes;
 using System.Windows.Forms;
 
 namespace tool.frame
@@ -42,12 +43,54 @@ namespace tool.frame
             public double x_span;
             public double y_span;
         };
-        
+
+        public PlotChannelTrace plot_channels(int channel)
+        {
+            return (PlotChannelTrace)_hander._plot.Channels[channel];
+        }
+
+        public void plot_markers(bool state)
+        {
+            for (int channel = 0; channel < 10; channel++)
+            {
+                plot_channels(channel).Markers.Visible = state;
+            }
+        }
+
         public void task()
         {
+            Thread.Sleep(1000);
+            Action<int, String> write = (ind,str) => { _hander._label[ind].Text = str; };
+            string[] lab_str = new string[10] { "", "", "", "", "", "", "", "", "", "" };
+
             while (true)
             {
+                if (_hander._plot.XAxes[0].Span < 500)
+                {
+                    plot_markers(true);
+                }
+                else
+                {
+                    plot_markers(false);
+                }
 
+
+                lab_str[0] = "123";// _hander._plot.DataCursors.Channel[0].Pointer1Position.ToString();
+                lab_str[1] = _hander._plot.DataCursors.Channel[0].Pointer2Position.ToString();
+                lab_str[2] = _hander._plot.DataCursors.Channel[0].Pointer1.ToString();
+                lab_str[3] = _hander._plot.DataCursors.Channel[0].Pointer2.ToString();
+                lab_str[4] = plot_channels(0).GetY(0).ToString();
+                //string st4 = _hander._plot.DataCursors.XY[0]. .ToString();
+
+                //int cursorX = 0;// int.Parse(_hander._plot.DataCursors.Channels[0].Hint.Text.Split(',')[0]);
+
+                for (int ind = 0; ind < 8; ind++)
+                {
+                    _hander.Invoke(write,ind, lab_str[ind]);
+                }
+               
+               // _hander.Invoke(write, 1, cursorX.ToString());
+                //tablex = plot_channels(0).DataCollection.X
                 get_wave_axes();
                 Thread.Sleep(100);
             }
