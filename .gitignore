@@ -49,6 +49,7 @@ Temporary Items
 #过滤
 .vs/
 bin/
+skin_source/
 *.crf
 *.d
 *.o
