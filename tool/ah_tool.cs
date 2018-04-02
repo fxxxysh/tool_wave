@@ -100,7 +100,7 @@ namespace tool
         private void ah_tool_FormClosing(object sender, FormClosingEventArgs e)
         {
             //_plot.Channels[0].mar
-            System.Environment.Exit(0);
+            //System.Environment.Exit(0);
         }
     }
 }

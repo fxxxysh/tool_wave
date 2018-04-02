@@ -37,8 +37,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\SkinUI\CSkin.dll</HintPath>
     </Reference>
-    <Reference Include="Iocomp.Instrumentation.WF40.Common, Version=4.0.4.13215, Culture=neutral, PublicKeyToken=096a9279a87304f1" />
-    <Reference Include="Iocomp.Instrumentation.WF40.Plot, Version=4.0.4.13282, Culture=neutral, PublicKeyToken=096a9279a87304f1, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -63,6 +61,1036 @@
     <Compile Include="frame\serial_port\serial_port_task.cs" />
     <Compile Include="frame\wave_form\wave_form..cs" />
     <Compile Include="frame\WMI\wmi.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AlignmentText.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Animation.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationArc.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationEllipse.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationImage.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationLine.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationOutline.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationPie.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationPolygon.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationRectangle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationShape.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationText.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\AnnotationTextBox.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Bevel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BevelMargin.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BevelThick.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BorderControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BorderSimple.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BorderSpecial.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\BoundsEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\CollectionBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ColorSection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ColorSectionCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ComponentBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Const.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ControlCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Convert2.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\DesignControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\DrawExtent.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\DrawFunctions.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\DrawStringFormat.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\EditBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\EvaluationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\EvaluationFormSWTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GetMouseCursorEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GPFunctions.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GrabHandle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GradientColor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GradientColorCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\GraphicsAPI.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\HitTest.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Hub.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\iColors.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\iDraw.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Indicator.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\IndicatorLed.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\IndicatorText.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\InstanceIO.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\iRectangle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\LostFocusEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Math2.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ObjectEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ObjectMoveIndexEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Outline.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PaintArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PercentItem.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PercentItemCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PercentLegend.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PercentLegendColumn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PlugInStandardCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PointDouble.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PointDoubleCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PointerSlidingScale.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PointerSlidingScaleCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PrintEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PrintPageEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PropertyChangedEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\PropertyData.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SaveDialogEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleAnnotation.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDiscreetItem.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDiscreetItemCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDiscreetMarker.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplay.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplayAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplayDiscreet.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplayDiscreetAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplayDiscreetLinear.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDisplayLinear.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDrawFill.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleDrawSegments.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleGeneratorAuto.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleGeneratorBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleGeneratorFixed.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleRange.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleRangeAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleRangeDiscreetAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleRangeLinear.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickInfo.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickLabel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickMajor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickMid.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ScaleTickMinor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Segment7.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SevenSegmentBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Shadow.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Shapes.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SlidingScaleBackground.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Stepper.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SubClassBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SubClassBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\SubControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextFormatDouble.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextFormatDoubleAll.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextFormatInteger.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextLayoutBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextLayoutFull.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TextLayoutHorizontal.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\TypeEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\UIControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\UIInputCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\UpdateRateTimer.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\Value.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueBoolean.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueBooleanEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueDateTime.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueDateTimeEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueDouble.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueDoubleEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueInteger.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueIntegerEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueLong.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueLongEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueString.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Classes\ValueStringEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\AddRemoveObjectEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\AnnotationEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\BoundsChangeEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\GetMouseCursorEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\InvalidateDelegate.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ObjectMoveIndexEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\PrintEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\PrintPageEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\PropertyChangeEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\SaveDialogEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\TypeEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueBooleanEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueDateTimeEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueDoubleEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueIntegerEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueLongEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Delegates\ValueStringEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Components\CollectionNavigatorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Components\ColorDialog.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Components\ColorSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Components\ColorSelectorGrid.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Components\ColorSelectorGridDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\CheckBox.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\CheckBoxDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\ColorPicker.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\ColorPickerDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\ColorPickerStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\ComboBox.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\ComboBoxDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DateTimePicker.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DateTimePickerDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DoubleEditButton.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DoubleEditButtonDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DoubleEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditBox.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditBoxDataStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditBoxDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditBoxLongFormat.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditMultiLine.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\EditMultiLineDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\FocusControlConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\FocusLabel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\FocusLabelDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\FontButton.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\FontButtonDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\NumericUpDown.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\NumericUpDownDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\PlugInEditorControlPropertyAdapter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\PropertyInfoCacheObject.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AboutPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AboutPlugInSWTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AlignmentTextEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnimationEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationArcEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationBaseConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationEllipseEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationImageEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationLineEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationPieEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationPolygonEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationRectangleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationTextBoxEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\AnnotationTextEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\BevelEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\BevelMarginEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\BevelThickEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\BorderControlEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\CollectionItemConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ColorSectionCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ColorSectionEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ComponentBaseDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ControlDesigner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\GradientColorCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\GradientColorEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\HubEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\IndicatorEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\IndicatorLedEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\LoadBeginEndSerializerComponentBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\LoadBeginEndSerializerControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\LoadBeginEndSerializerEditBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\OutlineEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PercentItemCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PercentItemEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PercentLegendColumnEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PercentLegendEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PlugInCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PlugInControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PlugInStandard.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PointDoubleCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PointDoubleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PointerSlidingScaleCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\PointerSlidingScaleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleAnnotationEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDiscreetItemCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDiscreetItemEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDiscreetMarkerEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayAngularEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayDiscreetAngularEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayDiscreetLinearEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayGeneratorEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayLinearEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleGeneratorAutoEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleGeneratorFixedEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeAngularEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeDiscreetAngularEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeLinearEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMajorEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMidEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMinorEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\Segment7EditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ShadowEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\SlidingScaleBackgroundEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\StepperEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\SubClassTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextFormatDoubleAllEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextFormatDoubleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextFormatIntegerEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextLayoutBaseEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextLayoutFullEditorPlugin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\TextLayoutHorizontalEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\UIControlEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\UITypeEditorEventArgs.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\UITypeEditorEventHandler.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\UITypeEditorGeneric.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueBaseConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueBooleanEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueBooleanTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueDateTimeEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueDateTimeTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueDoubleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueDoubleTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueIntegerEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueIntegerTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueLongEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueLongTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueStringEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Design\ValueStringTypeConverter.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IAmbientOwner.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IAnimation.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IAnnotationBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IAnnotationImage.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IBevel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IBevelThick.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IBorderControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ICollectionBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IComponentBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IForceDesignerChange.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IIndicatorLed.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IMatrixCollection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IMatrixControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IMatrixRowCol.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IOPCDataDoubleReceiver.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IOutline.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPercentLegend.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPercentLegendColumn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPlugInEditorControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPlugInMaster.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPlugInStandard.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPointerSlidingScale.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IPropertyDefaults.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleAnnotation.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDiscreetMarker.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDisplay.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDisplayAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDisplayDiscreet.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDisplayDiscreetAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleDisplayLinear.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleGeneratorBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleRangeAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleRangeLinear.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleTickBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleTickLabel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleTickMajor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleTickMid.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IScaleTickMinor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISegment7.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISetDesignerDefaults.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISevenSegmentBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISlidingScaleBackground.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IStepper.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISubClassBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISubControlBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ISupportUITypeEditor.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ITextLayoutBase.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ITextLayoutFull.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\ITextLayoutHorizontal.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IUIInput.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IUITypeEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Interfaces\IUpdateRate.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Licensing\CustomLicenseContext.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Licensing\DynamicLicenseKey.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Licensing\IocompLicenseProvider.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Special\ColorSelectorDropDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AlignmentQuadSide.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AlignmentSide.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AlignmentStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AmbientColorSouce.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AngularColorSectionDrawStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AnnotationFillStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\AnnotationOutlineStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\BevelStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\BevelThickness.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\BorderStyleControl.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\BorderStyleSimple.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\CacheBrushStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\CachePenStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ClockHourStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\CountDirection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\Direction.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\DirectionState.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\EditMode.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\EventSource.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\FaceReference.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\FrameDirection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ImageListStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\IndicatorStyleLED3D.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\IntegerFormatStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\LeadingStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\MagnitudeStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\MarkerStyleLabel.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\OPCXValueType.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\PercentDisplayDrawStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\PointerStyleSlidingScale.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\PointerTrackStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\PrecisionStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\PrintOrientation.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\QuadSide.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\RotationQuad.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ScaleGeneratorStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ScaleType.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\Segment7Character.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\SegmentsLedStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ShadowStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\ShapeBasic.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\SideDirection.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\SizeStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\SlidingScaleBackgroundStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\StackingDimension.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\StringAlignmentAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\StringAlignmentDiscreetAngular.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\SwitchMomentaryStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\TextFormatDoubleStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\TextFormatIntegerStyle.cs" />
+    <Compile Include="lib\Iocomp\common\Iocomp.Types\TextRotation.cs" />
+    <Compile Include="lib\Iocomp\common\ToolboxBitmaps\Access.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationArc.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationArcAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationEllipse.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationEllipseAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationFillBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationImage.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationImageAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationLine.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationLineAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationOutlineBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationPie.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationPieAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationPolygon.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationPolygonAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationRectangle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationRectangleAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationText.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationTextAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationTextBox.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAnnotationTextBoxAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAxisGridLines.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotAxisTracking.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotBrush.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBar.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBarAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBiFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBiFillAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBubble.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelBubbleAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelConsecutive.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelCubicSpline.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelCubicSplineAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDataCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDataPointClickEventArgs.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDataPointMovedEventArgs.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDifferential.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDifferentialAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDigital.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelDigitalAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelFillAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelImage.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelImageAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelPolynomial.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelPolynomialAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelRational.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelRationalAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelSweepInterval.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelSweepIntervalAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelTrace.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelTraceAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelTraceXY.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelTraceXYAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotChannelXYBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotColorLookupGradient.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotColorTable.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotColorTableEntry.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorChannel.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorChannelAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorChannelBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorChannels.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorChannelsAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorCustomizeHintTextEventArgs.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorDisplay.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorDisplayCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorHint.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorMultipleBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorMultipleStyleMenuItems.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorPointer.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorWindow.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorXY.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataCursorXYAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointBar.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointBiFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointBubble.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointCubicSpline.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointDifferential.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointDigital.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointPolynomial.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointRational.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointSweepInterval.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointTrace.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointTraceXY.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataPointYDouble.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataView.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataViewCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotDataViewZoomBoxEventArgs.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotFillGrid.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLabelBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLabelBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLabelBasic.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLabelBasicAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockGroup.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockGroupCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockItem.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockItemCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockItemDockOrderSorter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutBlockItemDockPercentStartSorter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutDataView.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutDockableAll.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutDockableDataView.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutManager.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutSorterDockOrder.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutSorterOrientation.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutStackingGroup.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutStackingGroupCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutStackingGroupSorter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutUniqueDockOrder.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutUniqueDockOrderCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLayoutViewerDragControl.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendBasic.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendBasicAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendChannelImage.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendChannelImageAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendMultiColumn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendMultiColumnAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendMultiColumnCellFormatting.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendMultiColumnItem.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendMultiColumnItemCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLegendWrapping.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBandBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBandX.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBandXAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBandY.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBandYAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitLineBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitLineX.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitLineXAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitLineY.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitLineYAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitPolyBand.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLimitPolyBandAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotLogFileAdapter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotMarker.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotObject.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotObjectCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotObjectCollectionBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotObjectRenamedEventArgs.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotPen.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotPrintAdapter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotSorterLayer.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableBaseCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableCell.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableCellFormat.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableCellsFormatting.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableChannel.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableChannelAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableGrid.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTableGridAccessor.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTitle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotToolBarAdapter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotToolBarButton.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotTraceFastDraw.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotXAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotXAxisCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotXYAxisReferenceBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotYAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Classes\PlotYAxisCollection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Delegates\PlotChannelDataPointClickEventHandler.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Delegates\PlotChannelDataPointMovedEventHandler.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Delegates\PlotDataCursorCustomizeHintTextEventHandler.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Delegates\PlotDataViewZoomBoxEventHandler.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Delegates\PlotObjectRenamedEventHandler.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\LoadBeginEndSerializerPlotToolBarButton.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\LoadBeginEndSerializerPlotToolBarStandard.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationArcEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationEllipseEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationImageEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationLineEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationPieEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationPolygonEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationRectangleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationTextBoxEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationTextEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationUnitTypesEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisGridLinesEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisTrackingEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotBrushEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBubbleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBubbleSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelCubicSplineDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelCubicSplineEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelFillDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelFillEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelImageEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelImageSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelPolynomialDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelPolynomialEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelRationalDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelRationalEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalSpecificEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceXYDataPointsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceXYEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotColorLookupGradientEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorChannelEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorChannelsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorHintEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorMultipleStyleMenuItemsEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorWindowEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorXYEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataViewCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDataViewEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotDesigner.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotFileIOEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotFillEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotFillGridEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLabelBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLabelBasicEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutAxisEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutDataViewEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutDockableAllEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutViewer.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutViewerEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendBasicEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendChannelImageEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendChannelImageTicksEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnCellFormattingPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnItemCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnItemPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendWrappingEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitBandXEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitBandYEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitLineXEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitLineYEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitPolyBandEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotLogFileAdapterEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotMarkerEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotPenEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotPrintAdapterEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableBaseCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableCellFormatEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableCellsFormattingEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableChannelEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTableGridEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotTitleEditorPlugIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotToolBarStandardDesigner.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotXAxisCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Design\PlotYAxisCollectionEditorPlugIn.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Instrumentation.Plotting\IocompLicenseProviderPlot.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Instrumentation.Plotting\Plot.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Instrumentation.Plotting\PlotBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Instrumentation.Plotting\PlotToolBarStandard.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IDrawLayoutControl.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotAxisGridLines.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotBrush.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotChannelBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotDataCursorBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotDataCursorHint.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotDataCursorPointer.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotDataCursorWindow.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotDraw.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotFill.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotLayer.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotLayout.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotLegendMultiColumnItem.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotLogFileAdapter.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotMarker.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotObject.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotObjectCollectionBase.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotObjectSubClass.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotPen.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotTableCell.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotTableCellFormat.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Interfaces\IPlotTitle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\DataDirection.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotAutoRotation.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotAxisMouseMode.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotAxisReference.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotBrushStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotChannelBubbleRadiusStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotChannelInterpolationResult.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotClippingStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotCopyToClipboardFormat.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDataCursorHintLocationStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDataCursorMultipleStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDataMoveStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDataViewAxesControlStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDataViewMouseMode.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDigitalReferenceStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDockAutoSizeAlignment.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDockStartStopStyleDockableAll.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDockStartStopStyleDockableAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDockStyleAll.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDockStyleAxis.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDragDockOrderOffset.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDragSide.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotDragType.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotFileDeliminator.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotFloatingReferenceStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotLegendMultiColumnItemType.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotLimitBandHitArea.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotMarkerStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotPenStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotPrintSizingStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotTableDataPointRangeStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotToolBarCommandStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotTrackingAlignFirstStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotTrackingExpandStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotTrackingStyle.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotUnitType.cs" />
+    <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotXValueTextDateTimeFormat.cs" />
+    <Compile Include="lib\Iocomp\plot\PlotToolBarIcons\Access.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="frame\serial_port\serial_port.cs" />
     <Compile Include="modules\protocol\protocol.cs" />
@@ -82,6 +1110,158 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="lib\Iocomp\common\Iocomp.Classes\EvaluationForm.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Classes\EvaluationFormSWTB.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design.Components\CollectionNavigatorPanel.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design.Components\ColorSelector.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design.Plugin.EditorControls\DoubleEditForm.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AboutPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AboutPlugInSWTB.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AlignmentTextEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnimationEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationArcEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationEllipseEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationImageEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationLineEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationPieEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationPolygonEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationRectangleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationTextBoxEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\AnnotationTextEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\BevelEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\BevelMarginEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\BevelThickEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\BorderControlEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ColorSectionEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\GradientColorEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\HubEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\IndicatorEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\IndicatorLedEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\OutlineEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PercentItemEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PercentLegendColumnEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PercentLegendEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PlugInControlPanel.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PointDoubleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\PointerSlidingScaleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleAnnotationEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDiscreetItemEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDiscreetMarkerEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayAngularEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayDiscreetAngularEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayDiscreetLinearEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayGeneratorEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleDisplayLinearEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleGeneratorAutoEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleGeneratorFixedEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeAngularEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeDiscreetAngularEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleRangeLinearEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMajorEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMidEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ScaleTickMinorEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\Segment7EditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ShadowEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\SlidingScaleBackgroundEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\StepperEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextFormatDoubleAllEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextFormatDoubleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextFormatIntegerEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextLayoutBaseEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextLayoutFullEditorPlugin.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\TextLayoutHorizontalEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\UIControlEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueBooleanEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueDateTimeEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueDoubleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueIntegerEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueLongEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Design\ValueStringEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\common\Iocomp.Special\ColorSelectorDropDown.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationArcEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationEllipseEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationImageEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationLineEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationPieEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationPolygonEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationRectangleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationTextBoxEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationTextEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAnnotationUnitTypesEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisGridLinesEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotAxisTrackingEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotBrushEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBarSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBiFillSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBubbleEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelBubbleSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelCubicSplineDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelCubicSplineEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDifferentialSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelDigitalSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelFillDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelFillEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelImageEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelImageSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelPolynomialDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelPolynomialEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelRationalDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelRationalEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelSweepIntervalSpecificEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceXYDataPointsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotChannelTraceXYEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotColorLookupGradientEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorChannelEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorChannelsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorHintEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorMultipleStyleMenuItemsEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorWindowEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataCursorXYEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotDataViewEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotFileIOEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotFillEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotFillGridEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLabelBasicEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutAxisEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutDataViewEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutDockableAllEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLayoutViewerEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendBasicEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendChannelImageEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendChannelImageTicksEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnCellFormattingPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendMultiColumnItemPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLegendWrappingEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitBandXEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitBandYEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitLineXEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitLineYEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLimitPolyBandEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotLogFileAdapterEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotMarkerEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotPenEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotPrintAdapterEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTableCellFormatEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTableCellsFormattingEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTableChannelEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTableEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTableGridEditorPlugIn.resource" />
+    <None Include="lib\Iocomp\plot\Iocomp.Design\PlotTitleEditorPlugIn.resource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,11 +1285,87 @@
     <Folder Include="bin\Debug\" />
     <Folder Include="bin\Release\" />
     <Folder Include="device\gnss\" />
-    <Folder Include="lib\" />
     <Folder Include="modules\logger\" />
     <Folder Include="modules\wave\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08DN.ICO" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08UP.ICO" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARWHEAD.ICO" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ClockAnalog.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Compass.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\DisplayDouble.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\DisplayInteger.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\DisplayString.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\EditDouble.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\EditInteger.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\EditString.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\GaugeAngular.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\GaugeLinear.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\GaugeTube.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ImageDisplay.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ioc-large.png" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Keyboard.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Knob.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Label.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\LcdMatrix.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Led.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\LedArrow.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\LedBar.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\LedSpiral.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\MatrixButtons.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\MatrixLeds.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ModeComboBox.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Motor.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\ObjectCanvas.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Odometer.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\OPCData.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Panel.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\PercentBar.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\PercentPie.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\PhonePad.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Pipe.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\PipeJoint.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Plot.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\PlotToolBar.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\RotationDisplay.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentAnalog.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentBinary.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentCharacter.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentClock.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentClockSmpte.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentHexadecimal.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SevenSegmentInteger.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Slider.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SlidingCompass.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SlidingScale.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SpectrumDisplay.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchLed.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchLever.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchPanel.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchQuad.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchRocker.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchRocker3Way.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchRotary.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchSlider.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\SwitchToggle.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Tank.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Thermometer.bmp" />
+    <Content Include="lib\Iocomp\common\ToolboxBitmaps\Valve.bmp" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarAxesScroll.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarAxesZoom.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarCopy.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarDataCursor.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarEdit.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarPreview.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarPrint.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarSave.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarSelect.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarTrackingPause.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarTrackingResume.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarZoomBox.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarZoomIn.ico" />
+    <Content Include="lib\Iocomp\plot\PlotToolBarIcons\PlotToolBarZoomOut.ico" />
     <Content Include="Resources\tool.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
