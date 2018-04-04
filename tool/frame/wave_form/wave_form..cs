@@ -65,7 +65,7 @@ namespace tool.frame
 
             while (true)
             {
-                if (_hander._plot.XAxes[0].Span < 500)
+                if ((_hander._plot.XAxes[0].Span < 350) || (_hander._plot.YAxes[0].Span < 350))
                 {
                     plot_markers(true);
                 }
@@ -76,9 +76,9 @@ namespace tool.frame
 
 
                 lab_str[0] = "123";// _hander._plot.DataCursors.Channel[0].Pointer1Position.ToString();
-                lab_str[1] = _hander._plot.DataCursors.Channel[0].Pointer2Position.ToString();
-                lab_str[2] = _hander._plot.DataCursors.Channel[0].Pointer1.ToString();
-                lab_str[3] = _hander._plot.DataCursors.Channel[0].Pointer2.ToString();
+                //lab_str[1] = _hander._plot.DataCursors.Channel[0].Pointer2Position.ToString();
+                //lab_str[2] = _hander._plot.DataCursors.Channel[0].Pointer1.ToString();
+                //lab_str[3] = _hander._plot.DataCursors.Channel[0].Pointer2.ToString();
                 lab_str[4] = plot_channels(0).GetY(0).ToString();
                 //string st4 = _hander._plot.DataCursors.XY[0]. .ToString();
 
