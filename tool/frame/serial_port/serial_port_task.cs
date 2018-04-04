@@ -9,12 +9,25 @@ namespace tool.frame
 {
     public partial class serial_port
     {
-        public void task()
+        public void parse_task()
+        {
+            test_add_data();
+            while (true)
+            {
+                if (_serialPort.IsOpen == true)
+                {
+                    test_add_data();
+                }
+                Thread.Sleep(10);
+            }
+        }
+
+        public void refresh_task()
         {
             while (true)
             {
-                test_add_data();
-                Thread.Sleep(10);
+                //com_port_DropDown(null, null);
+                Thread.Sleep(500);
             }
         }
 
@@ -72,7 +85,12 @@ namespace tool.frame
         private void com_port_DropDown(object sender, EventArgs e)
         {
             string[] device_ports = get_port_list();
-            set_serial_port(device_ports);
+
+            if (device_ports != null)
+            {
+                //_hander.Invoke(new Action(() => { set_serial_port(device_ports); }));
+                set_serial_port(device_ports);
+            }
         }
 
         private void com_port_DropDownClosed(object sender, EventArgs e)

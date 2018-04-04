@@ -86,7 +86,7 @@ namespace tool.frame
 
                 for (int ind = 0; ind < 8; ind++)
                 {
-                    _hander.Invoke(write,ind, lab_str[ind]);
+                    //_hander.Invoke(write,ind, lab_str[ind]);
                 }
                
                // _hander.Invoke(write, 1, cursorX.ToString());

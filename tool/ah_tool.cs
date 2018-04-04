@@ -65,6 +65,12 @@ namespace tool
             set { com_switch = value; }
         }
 
+        public static void set_double_cache(Control control)
+        {
+            control.GetType().GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance |
+            System.Reflection.BindingFlags.NonPublic).SetValue(control, true, null);
+        }
+
         // 防止界面切换闪烁
         protected override CreateParams CreateParams
         {
@@ -74,6 +80,13 @@ namespace tool
                 cp.ExStyle |= 0x02000000;
                 return cp;
             }
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x0014) // 禁掉清除背景消息
+                return;
+            base.WndProc(ref m);
         }
 
         public ah_tool()
@@ -99,6 +112,9 @@ namespace tool
             _list.Add(label6);
             _list.Add(label7);
             _list.Add(label8);
+
+            set_double_cache(wave_plot);
+            set_double_cache(plotToolBar);
         }
 
         // 主函数

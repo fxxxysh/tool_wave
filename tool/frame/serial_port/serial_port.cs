@@ -47,13 +47,20 @@ namespace tool.frame
 
             _serialPort = new SerialPort();
 
-            Thread th = new Thread(task)
+            //串口解析任务
+            Thread th = new Thread(parse_task)
             { Priority = ThreadPriority.AboveNormal, IsBackground = true };
             th.Start();
+
+            //串口刷新任务
+            Thread th1 = new Thread(refresh_task)
+            { Priority = ThreadPriority.BelowNormal, IsBackground = true };
+            th1.Start();
         }
 
         void event_init()
         {
+            //_serialPort.DataReceived += new SerialDataReceivedEventHandler(com_111);
             _com_switch.Click += new System.EventHandler(com_switch_Click);
             _com_port.DropDown += new System.EventHandler(com_port_DropDown);
             _com_port.DropDownClosed += new System.EventHandler(com_port_DropDownClosed);
@@ -103,10 +110,14 @@ namespace tool.frame
             if (sw)
             {
                 _com_switch.Image = Properties.Resources.port_open;
+                _com_port.Enabled = false;
+                _com_baudrate.Enabled = false;
             }
             else
             {
                 _com_switch.Image = Properties.Resources.port_close;
+                _com_port.Enabled = true;
+                _com_baudrate.Enabled = true;
             }
         }
 
@@ -154,26 +165,27 @@ namespace tool.frame
                 now_port += ports;
             }
 
-            if (last_prot != now_port)
+            if ((last_prot != now_port) || (last_prot == null))
             {
                 last_prot = now_port;
 
-                device_ports = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
-                int cnt = 0;
-                foreach (string ports in device_ports)
-                {
-                    Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
-                    MatchCollection matches = regex.Matches(ports);
+                //device_ports = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
+                //int cnt = 0;
+                //foreach (string ports in device_ports)
+                //{
+                //    Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
+                //    MatchCollection matches = regex.Matches(ports);
 
-                    string name = ports.Split('(')[0];
-                    string com = matches[0].Value.Trim('(', ')').Split('-')[0];
+                //    string name = ports.Split('(')[0];
+                //    string com = matches[0].Value.Trim('(', ')').Split('-')[0];
 
-                    device_ports[cnt++] = com + " " + name;//.Substring(0, 4) + "...";
-                }
+                //    device_ports[cnt++] = com + " " + name;//.Substring(0, 4) + "...";
+                //}
 
                 last_device_ports = device_ports;
+                return device_ports;
             }
-            return last_device_ports;
+            return null;
         }
     }
 }
