@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Management;
+using Microsoft.Win32;
 
 namespace tool.frame
 {
@@ -95,6 +96,28 @@ namespace tool.frame
             }
             finally
             { strs = null; }
+        }
+
+        public static string[] GetComList()
+        {
+            RegistryKey keyCom = Registry.LocalMachine.OpenSubKey("Hardware\\DeviceMap\\SerialComm");
+            string[] sSubKeys = keyCom.GetValueNames();
+            string[] str = new string[sSubKeys.Length];
+            for (int i = 0; i < sSubKeys.Length; i++)
+            {
+                str[i] = (string)keyCom.GetValue(sSubKeys[i]);
+            }
+            return str;
+        }
+
+        public static void GetComList1()
+        {
+            string[] sSubKeys;
+            RegistryKey keyCom = Registry.LocalMachine.OpenSubKey("Hardware\\DeviceMap\\SerialComm");
+            if (keyCom != null)
+            {
+                sSubKeys = keyCom.GetValueNames();
+            }
         }
     }
 }

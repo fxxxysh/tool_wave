@@ -62,7 +62,7 @@ namespace tool.frame
         {
             //_serialPort.DataReceived += new SerialDataReceivedEventHandler(com_111);
             _com_switch.Click += new System.EventHandler(com_switch_Click);
-            _com_port.DropDown += new System.EventHandler(com_port_DropDown);
+           // _com_port.DropDown += new System.EventHandler(com_port_DropDown);
             _com_port.DropDownClosed += new System.EventHandler(com_port_DropDownClosed);
         }
 
@@ -93,7 +93,6 @@ namespace tool.frame
                     {
                         current_port_sign = true;
                     }
-
                     _com_port.Text = device_ports[0];
                 }
 
@@ -152,35 +151,49 @@ namespace tool.frame
             return status;
         }
 
+
+        public static int GetComNum()
+        {
+            int comNum = -1;
+            string[] strArr = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
+            foreach (string s in strArr)
+            {
+                //if (s.Length >= 23 && s.Contains("CH340"))
+                {
+                    int start = s.IndexOf("(") + 3;
+                    int end = s.IndexOf(")");
+                    //comNum = Convert.ToInt32(s.Substring(start + 1, end - start - 1));
+                }
+            }
+            return comNum;
+        }
+
+
+
         // 更新串口端口列表
-        string last_prot;
+        int last_prot_size = 0;
         string[] last_device_ports;
         public string[] get_port_list()
         {
             string[] device_ports = SerialPort.GetPortNames();
-            string now_port = null;
+            int now_port_size = device_ports.Length;
 
-            foreach (string ports in device_ports)
+            if (last_prot_size != now_port_size)
             {
-                now_port += ports;
-            }
+                last_prot_size = now_port_size;
 
-            if ((last_prot != now_port) || (last_prot == null))
-            {
-                last_prot = now_port;
+                device_ports = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
+                int cnt = 0;
+                foreach (string ports in device_ports)
+                {
+                    Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
+                    MatchCollection matches = regex.Matches(ports);
 
-                //device_ports = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
-                //int cnt = 0;
-                //foreach (string ports in device_ports)
-                //{
-                //    Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
-                //    MatchCollection matches = regex.Matches(ports);
+                    string name = ports.Split('(')[0];
+                    string com = matches[0].Value.Trim('(', ')').Split('-')[0];
 
-                //    string name = ports.Split('(')[0];
-                //    string com = matches[0].Value.Trim('(', ')').Split('-')[0];
-
-                //    device_ports[cnt++] = com + " " + name;//.Substring(0, 4) + "...";
-                //}
+                    device_ports[cnt++] = com + " " + name;//.Substring(0, 4) + "...";
+                }
 
                 last_device_ports = device_ports;
                 return device_ports;

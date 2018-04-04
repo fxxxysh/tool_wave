@@ -26,8 +26,8 @@ namespace tool.frame
         {
             while (true)
             {
-                //com_port_DropDown(null, null);
-                Thread.Sleep(500);
+                com_port_DropDown(null, null);
+                Thread.Sleep(100);
             }
         }
 
@@ -71,11 +71,6 @@ namespace tool.frame
             string baudrate = _com_baudrate.Text;
             string port_name = _com_port.Text;
 
-            //_com_port.Text = "COM1";
-            //Regex regex = new Regex(@"\(.*?\)", RegexOptions.IgnoreCase);
-            //MatchCollection matches = regex.Matches(port_name);
-            //string port = matches[0].Value.Trim('(', ')').Split('-')[0];
-
             string port = port_name.Split(' ')[0];
             status = operate_port(port, baudrate);
             set_serial_status(status);
@@ -88,20 +83,13 @@ namespace tool.frame
 
             if (device_ports != null)
             {
-                //_hander.Invoke(new Action(() => { set_serial_port(device_ports); }));
-                set_serial_port(device_ports);
+                _hander.Invoke(new Action(() => { set_serial_port(device_ports); }));
+                //set_serial_port(device_ports);
             }
         }
 
         private void com_port_DropDownClosed(object sender, EventArgs e)
         {
-            //this._com_port.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            //this._com_port.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-
-            //string port_name = _com_port.Text;
-            //string port = port_name.Split(' ')[0];
-            //_com_port.Text = port;
-
             _lost_focus.Focus();
         }
     }
