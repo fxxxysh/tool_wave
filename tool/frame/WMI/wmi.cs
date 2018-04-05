@@ -109,15 +109,5 @@ namespace tool.frame
             }
             return str;
         }
-
-        public static void GetComList1()
-        {
-            string[] sSubKeys;
-            RegistryKey keyCom = Registry.LocalMachine.OpenSubKey("Hardware\\DeviceMap\\SerialComm");
-            if (keyCom != null)
-            {
-                sSubKeys = keyCom.GetValueNames();
-            }
-        }
     }
 }

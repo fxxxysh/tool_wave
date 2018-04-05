@@ -151,25 +151,6 @@ namespace tool.frame
             return status;
         }
 
-
-        public static int GetComNum()
-        {
-            int comNum = -1;
-            string[] strArr = WMI.MulGetHardwareInfo(WMI.HardwareEnum.Win32_PnPEntity, "Name");
-            foreach (string s in strArr)
-            {
-                //if (s.Length >= 23 && s.Contains("CH340"))
-                {
-                    int start = s.IndexOf("(") + 3;
-                    int end = s.IndexOf(")");
-                    //comNum = Convert.ToInt32(s.Substring(start + 1, end - start - 1));
-                }
-            }
-            return comNum;
-        }
-
-
-
         // 更新串口端口列表
         int last_prot_size = 0;
         string[] last_device_ports;

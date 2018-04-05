@@ -30,25 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ah_tool));
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace11 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace12 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace13 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace14 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace15 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace16 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace17 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace18 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace19 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace20 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotDataCursorChannels plotDataCursorChannels2 = new Iocomp.Classes.PlotDataCursorChannels();
-            Iocomp.Classes.PlotDataView plotDataView2 = new Iocomp.Classes.PlotDataView();
-            Iocomp.Classes.PlotLabelBasic plotLabelBasic2 = new Iocomp.Classes.PlotLabelBasic();
-            Iocomp.Classes.PlotLegendBasic plotLegendBasic2 = new Iocomp.Classes.PlotLegendBasic();
-            Iocomp.Classes.PlotXAxis plotXAxis2 = new Iocomp.Classes.PlotXAxis();
-            Iocomp.Classes.PlotYAxis plotYAxis2 = new Iocomp.Classes.PlotYAxis();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace1 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace2 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace3 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace4 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace5 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace6 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace7 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace8 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace9 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace10 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotDataCursorChannels plotDataCursorChannels1 = new Iocomp.Classes.PlotDataCursorChannels();
+            Iocomp.Classes.PlotDataView plotDataView1 = new Iocomp.Classes.PlotDataView();
+            Iocomp.Classes.PlotLabelBasic plotLabelBasic1 = new Iocomp.Classes.PlotLabelBasic();
+            Iocomp.Classes.PlotLegendBasic plotLegendBasic1 = new Iocomp.Classes.PlotLegendBasic();
+            Iocomp.Classes.PlotXAxis plotXAxis1 = new Iocomp.Classes.PlotXAxis();
+            Iocomp.Classes.PlotYAxis plotYAxis1 = new Iocomp.Classes.PlotYAxis();
             this.TabControl_func = new CCWin.SkinControl.SkinTabControl();
             this.TabPage_wave = new CCWin.SkinControl.SkinTabPage();
             this.wave_main_panel = new System.Windows.Forms.Panel();
+            this.ToolBar_image = new System.Windows.Forms.ImageList(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TabPage_data = new CCWin.SkinControl.SkinTabPage();
+            this.TabPage_device = new CCWin.SkinControl.SkinTabPage();
+            this.com_toolStrip = new System.Windows.Forms.ToolStrip();
+            this.com_port = new System.Windows.Forms.ToolStripComboBox();
+            this.com_baudrate = new System.Windows.Forms.ToolStripComboBox();
+            this.com_switch = new System.Windows.Forms.ToolStripButton();
+            this.com_panel = new System.Windows.Forms.Panel();
             this.plotToolBar = new Iocomp.Instrumentation.Plotting.PlotToolBarStandard();
             this.plotToolBarButton1 = new Iocomp.Classes.PlotToolBarButton();
             this.plotToolBarButton2 = new Iocomp.Classes.PlotToolBarButton();
@@ -68,23 +84,7 @@
             this.plotToolBarButton16 = new Iocomp.Classes.PlotToolBarButton();
             this.plotToolBarButton17 = new Iocomp.Classes.PlotToolBarButton();
             this.plotToolBarButton18 = new Iocomp.Classes.PlotToolBarButton();
-            this.ToolBar_image = new System.Windows.Forms.ImageList(this.components);
             this.wave_plot = new Iocomp.Instrumentation.Plotting.Plot();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TabPage_data = new CCWin.SkinControl.SkinTabPage();
-            this.TabPage_device = new CCWin.SkinControl.SkinTabPage();
-            this.com_toolStrip = new System.Windows.Forms.ToolStrip();
-            this.com_port = new System.Windows.Forms.ToolStripComboBox();
-            this.com_baudrate = new System.Windows.Forms.ToolStripComboBox();
-            this.com_switch = new System.Windows.Forms.ToolStripButton();
-            this.com_panel = new System.Windows.Forms.Panel();
             this.TabControl_func.SuspendLayout();
             this.TabPage_wave.SuspendLayout();
             this.wave_main_panel.SuspendLayout();
@@ -146,8 +146,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wave_main_panel.BackColor = System.Drawing.Color.Gainsboro;
-            this.wave_main_panel.Controls.Add(this.plotToolBar);
-            this.wave_main_panel.Controls.Add(this.wave_plot);
             this.wave_main_panel.Controls.Add(this.label5);
             this.wave_main_panel.Controls.Add(this.label6);
             this.wave_main_panel.Controls.Add(this.label7);
@@ -156,11 +154,212 @@
             this.wave_main_panel.Controls.Add(this.label4);
             this.wave_main_panel.Controls.Add(this.label2);
             this.wave_main_panel.Controls.Add(this.label1);
+            this.wave_main_panel.Controls.Add(this.plotToolBar);
+            this.wave_main_panel.Controls.Add(this.wave_plot);
             this.wave_main_panel.Location = new System.Drawing.Point(0, 0);
             this.wave_main_panel.Margin = new System.Windows.Forms.Padding(0);
             this.wave_main_panel.Name = "wave_main_panel";
             this.wave_main_panel.Size = new System.Drawing.Size(1015, 498);
             this.wave_main_panel.TabIndex = 1;
+            // 
+            // ToolBar_image
+            // 
+            this.ToolBar_image.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ToolBar_image.ImageStream")));
+            this.ToolBar_image.TransparentColor = System.Drawing.Color.Transparent;
+            this.ToolBar_image.Images.SetKeyName(0, "");
+            this.ToolBar_image.Images.SetKeyName(1, "");
+            this.ToolBar_image.Images.SetKeyName(2, "");
+            this.ToolBar_image.Images.SetKeyName(3, "");
+            this.ToolBar_image.Images.SetKeyName(4, "");
+            this.ToolBar_image.Images.SetKeyName(5, "");
+            this.ToolBar_image.Images.SetKeyName(6, "");
+            this.ToolBar_image.Images.SetKeyName(7, "");
+            this.ToolBar_image.Images.SetKeyName(8, "");
+            this.ToolBar_image.Images.SetKeyName(9, "");
+            this.ToolBar_image.Images.SetKeyName(10, "");
+            this.ToolBar_image.Images.SetKeyName(11, "");
+            this.ToolBar_image.Images.SetKeyName(12, "");
+            this.ToolBar_image.Images.SetKeyName(13, "");
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(481, 444);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(591, 444);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 20);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(701, 444);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 20);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(811, 444);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "label8";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(261, 444);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(371, 444);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "label4";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(151, 444);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(41, 444);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // TabPage_data
+            // 
+            this.TabPage_data.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_data.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_data.Location = new System.Drawing.Point(0, 42);
+            this.TabPage_data.Name = "TabPage_data";
+            this.TabPage_data.Size = new System.Drawing.Size(1015, 522);
+            this.TabPage_data.TabIndex = 1;
+            this.TabPage_data.TabItemImage = null;
+            this.TabPage_data.Text = "数据";
+            // 
+            // TabPage_device
+            // 
+            this.TabPage_device.BackColor = System.Drawing.Color.SlateGray;
+            this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabPage_device.Location = new System.Drawing.Point(0, 42);
+            this.TabPage_device.Name = "TabPage_device";
+            this.TabPage_device.Size = new System.Drawing.Size(1015, 522);
+            this.TabPage_device.TabIndex = 2;
+            this.TabPage_device.TabItemImage = null;
+            this.TabPage_device.Text = "设备";
+            // 
+            // com_toolStrip
+            // 
+            this.com_toolStrip.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.com_toolStrip.BackColor = System.Drawing.Color.Transparent;
+            this.com_toolStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.com_toolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            this.com_toolStrip.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.com_toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.com_toolStrip.ImageScalingSize = new System.Drawing.Size(35, 35);
+            this.com_toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.com_port,
+            this.com_baudrate,
+            this.com_switch});
+            this.com_toolStrip.Location = new System.Drawing.Point(421, 2);
+            this.com_toolStrip.Name = "com_toolStrip";
+            this.com_toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.com_toolStrip.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.com_toolStrip.Size = new System.Drawing.Size(257, 42);
+            this.com_toolStrip.TabIndex = 4;
+            this.com_toolStrip.Text = "com_toolStrip";
+            // 
+            // com_port
+            // 
+            this.com_port.BackColor = System.Drawing.Color.White;
+            this.com_port.DropDownWidth = 200;
+            this.com_port.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.com_port.ForeColor = System.Drawing.Color.Black;
+            this.com_port.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
+            this.com_port.MaxLength = 200;
+            this.com_port.Name = "com_port";
+            this.com_port.Size = new System.Drawing.Size(100, 39);
+            this.com_port.Sorted = true;
+            this.com_port.Text = "AUTO";
+            this.com_port.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // com_baudrate
+            // 
+            this.com_baudrate.BackColor = System.Drawing.Color.White;
+            this.com_baudrate.ForeColor = System.Drawing.Color.Black;
+            this.com_baudrate.Items.AddRange(new object[] {
+            "9600",
+            "14400",
+            "19200",
+            "38400",
+            "57600",
+            "115200",
+            "128000",
+            "153600",
+            "230400",
+            "250000",
+            "256000",
+            "460800",
+            "500000",
+            "576000",
+            "625000"});
+            this.com_baudrate.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
+            this.com_baudrate.Name = "com_baudrate";
+            this.com_baudrate.Size = new System.Drawing.Size(75, 39);
+            this.com_baudrate.Text = "115200";
+            this.com_baudrate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // com_switch
+            // 
+            this.com_switch.AutoToolTip = false;
+            this.com_switch.BackColor = System.Drawing.Color.Transparent;
+            this.com_switch.CheckOnClick = true;
+            this.com_switch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.com_switch.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.com_switch.Image = ((System.Drawing.Image)(resources.GetObject("com_switch.Image")));
+            this.com_switch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.com_switch.Name = "com_switch";
+            this.com_switch.Size = new System.Drawing.Size(39, 39);
+            this.com_switch.Text = "端口";
+            // 
+            // com_panel
+            // 
+            this.com_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.com_panel.BackColor = System.Drawing.Color.Transparent;
+            this.com_panel.Controls.Add(this.com_toolStrip);
+            this.com_panel.Location = new System.Drawing.Point(299, -1);
+            this.com_panel.Margin = new System.Windows.Forms.Padding(0);
+            this.com_panel.Name = "com_panel";
+            this.com_panel.Size = new System.Drawing.Size(709, 42);
+            this.com_panel.TabIndex = 5;
             // 
             // plotToolBar
             // 
@@ -363,25 +562,6 @@
             this.plotToolBarButton18.Style = System.Windows.Forms.ToolBarButtonStyle.Separator;
             this.plotToolBarButton18.LoadingEnd();
             // 
-            // ToolBar_image
-            // 
-            this.ToolBar_image.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ToolBar_image.ImageStream")));
-            this.ToolBar_image.TransparentColor = System.Drawing.Color.Transparent;
-            this.ToolBar_image.Images.SetKeyName(0, "");
-            this.ToolBar_image.Images.SetKeyName(1, "");
-            this.ToolBar_image.Images.SetKeyName(2, "");
-            this.ToolBar_image.Images.SetKeyName(3, "");
-            this.ToolBar_image.Images.SetKeyName(4, "");
-            this.ToolBar_image.Images.SetKeyName(5, "");
-            this.ToolBar_image.Images.SetKeyName(6, "");
-            this.ToolBar_image.Images.SetKeyName(7, "");
-            this.ToolBar_image.Images.SetKeyName(8, "");
-            this.ToolBar_image.Images.SetKeyName(9, "");
-            this.ToolBar_image.Images.SetKeyName(10, "");
-            this.ToolBar_image.Images.SetKeyName(11, "");
-            this.ToolBar_image.Images.SetKeyName(12, "");
-            this.ToolBar_image.Images.SetKeyName(13, "");
-            // 
             // wave_plot
             // 
             this.wave_plot.LoadingBegin();
@@ -391,295 +571,116 @@
             this.wave_plot.AutoSize = false;
             this.wave_plot.Border.Margin = 1;
             this.wave_plot.Border.Style = Iocomp.Types.BorderStyleControl.None;
-            plotChannelTrace11.Color = System.Drawing.Color.Red;
-            plotChannelTrace11.Markers.Size = 2;
-            plotChannelTrace11.Name = "Channel 1";
-            plotChannelTrace11.SendXAxisTrackingData = false;
-            plotChannelTrace11.SendYAxisTrackingData = false;
-            plotChannelTrace11.TitleText = "CH1";
-            plotChannelTrace12.Color = System.Drawing.Color.Blue;
-            plotChannelTrace12.Markers.Size = 2;
-            plotChannelTrace12.Name = "Channel 2";
-            plotChannelTrace12.TitleText = "CH2";
-            plotChannelTrace13.Color = System.Drawing.Color.Lime;
-            plotChannelTrace13.Markers.Size = 2;
-            plotChannelTrace13.Name = "Channel 3";
-            plotChannelTrace13.TitleText = "CH3";
-            plotChannelTrace14.Color = System.Drawing.Color.Yellow;
-            plotChannelTrace14.Markers.Size = 2;
-            plotChannelTrace14.Name = "Channel 4";
-            plotChannelTrace14.TitleText = "CH4";
-            plotChannelTrace15.Color = System.Drawing.Color.Aqua;
-            plotChannelTrace15.Markers.Size = 2;
-            plotChannelTrace15.Name = "Channel 5";
-            plotChannelTrace15.TitleText = "CH5";
-            plotChannelTrace16.Color = System.Drawing.Color.White;
-            plotChannelTrace16.Markers.Size = 2;
-            plotChannelTrace16.Name = "Channel 6";
-            plotChannelTrace16.TitleText = "CH6";
-            plotChannelTrace17.Color = System.Drawing.Color.Purple;
-            plotChannelTrace17.Markers.Size = 2;
-            plotChannelTrace17.Name = "Channel 7";
-            plotChannelTrace17.TitleText = "CH7";
-            plotChannelTrace18.Color = System.Drawing.Color.DeepSkyBlue;
-            plotChannelTrace18.Markers.Size = 2;
-            plotChannelTrace18.Name = "Channel 8";
-            plotChannelTrace18.TitleText = "CH8";
-            plotChannelTrace19.Color = System.Drawing.Color.LightSeaGreen;
-            plotChannelTrace19.Markers.Size = 2;
-            plotChannelTrace19.Name = "Channel 9";
-            plotChannelTrace19.TitleText = "CH9";
-            plotChannelTrace20.Color = System.Drawing.Color.OliveDrab;
-            plotChannelTrace20.Markers.Size = 2;
-            plotChannelTrace20.Name = "Channel 10";
-            plotChannelTrace20.TitleText = "CH110";
-            this.wave_plot.Channels.Add(plotChannelTrace11);
-            this.wave_plot.Channels.Add(plotChannelTrace12);
-            this.wave_plot.Channels.Add(plotChannelTrace13);
-            this.wave_plot.Channels.Add(plotChannelTrace14);
-            this.wave_plot.Channels.Add(plotChannelTrace15);
-            this.wave_plot.Channels.Add(plotChannelTrace16);
-            this.wave_plot.Channels.Add(plotChannelTrace17);
-            this.wave_plot.Channels.Add(plotChannelTrace18);
-            this.wave_plot.Channels.Add(plotChannelTrace19);
-            this.wave_plot.Channels.Add(plotChannelTrace20);
-            plotDataCursorChannels2.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
-            plotDataCursorChannels2.HitRegionSize = 0;
-            plotDataCursorChannels2.Name = "Data-Cursor 2";
-            plotDataCursorChannels2.TitleText = "Data-Cursor 2";
-            this.wave_plot.DataCursors.Add(plotDataCursorChannels2);
-            plotDataView2.DockMargin = 0;
-            plotDataView2.Name = "Data-View 1";
-            plotDataView2.TitleText = "Data-View 1";
-            this.wave_plot.DataViews.Add(plotDataView2);
+            plotChannelTrace1.Color = System.Drawing.Color.Red;
+            plotChannelTrace1.Markers.Size = 2;
+            plotChannelTrace1.Name = "Channel 1";
+            plotChannelTrace1.SendXAxisTrackingData = false;
+            plotChannelTrace1.SendYAxisTrackingData = false;
+            plotChannelTrace1.TitleText = "CH1";
+            plotChannelTrace2.Color = System.Drawing.Color.Blue;
+            plotChannelTrace2.Markers.Size = 2;
+            plotChannelTrace2.Name = "Channel 2";
+            plotChannelTrace2.TitleText = "CH2";
+            plotChannelTrace3.Color = System.Drawing.Color.Lime;
+            plotChannelTrace3.Markers.Size = 2;
+            plotChannelTrace3.Name = "Channel 3";
+            plotChannelTrace3.TitleText = "CH3";
+            plotChannelTrace4.Color = System.Drawing.Color.Yellow;
+            plotChannelTrace4.Markers.Size = 2;
+            plotChannelTrace4.Name = "Channel 4";
+            plotChannelTrace4.TitleText = "CH4";
+            plotChannelTrace5.Color = System.Drawing.Color.Aqua;
+            plotChannelTrace5.Markers.Size = 2;
+            plotChannelTrace5.Name = "Channel 5";
+            plotChannelTrace5.TitleText = "CH5";
+            plotChannelTrace6.Color = System.Drawing.Color.White;
+            plotChannelTrace6.Markers.Size = 2;
+            plotChannelTrace6.Name = "Channel 6";
+            plotChannelTrace6.TitleText = "CH6";
+            plotChannelTrace7.Color = System.Drawing.Color.Purple;
+            plotChannelTrace7.Markers.Size = 2;
+            plotChannelTrace7.Name = "Channel 7";
+            plotChannelTrace7.TitleText = "CH7";
+            plotChannelTrace8.Color = System.Drawing.Color.DeepSkyBlue;
+            plotChannelTrace8.Markers.Size = 2;
+            plotChannelTrace8.Name = "Channel 8";
+            plotChannelTrace8.TitleText = "CH8";
+            plotChannelTrace9.Color = System.Drawing.Color.LightSeaGreen;
+            plotChannelTrace9.Markers.Size = 2;
+            plotChannelTrace9.Name = "Channel 9";
+            plotChannelTrace9.TitleText = "CH9";
+            plotChannelTrace10.Color = System.Drawing.Color.OliveDrab;
+            plotChannelTrace10.Markers.Size = 2;
+            plotChannelTrace10.Name = "Channel 10";
+            plotChannelTrace10.TitleText = "CH110";
+            this.wave_plot.Channels.Add(plotChannelTrace1);
+            this.wave_plot.Channels.Add(plotChannelTrace2);
+            this.wave_plot.Channels.Add(plotChannelTrace3);
+            this.wave_plot.Channels.Add(plotChannelTrace4);
+            this.wave_plot.Channels.Add(plotChannelTrace5);
+            this.wave_plot.Channels.Add(plotChannelTrace6);
+            this.wave_plot.Channels.Add(plotChannelTrace7);
+            this.wave_plot.Channels.Add(plotChannelTrace8);
+            this.wave_plot.Channels.Add(plotChannelTrace9);
+            this.wave_plot.Channels.Add(plotChannelTrace10);
+            this.wave_plot.Cursor = System.Windows.Forms.Cursors.Hand;
+            plotDataCursorChannels1.Hint.Fill.Pen.Color = System.Drawing.SystemColors.InfoText;
+            plotDataCursorChannels1.HitRegionSize = 0;
+            plotDataCursorChannels1.Name = "Data-Cursor 2";
+            plotDataCursorChannels1.TitleText = "Data-Cursor 2";
+            this.wave_plot.DataCursors.Add(plotDataCursorChannels1);
+            plotDataView1.DockMargin = 0;
+            plotDataView1.Name = "Data-View 1";
+            plotDataView1.TitleText = "Data-View 1";
+            this.wave_plot.DataViews.Add(plotDataView1);
             this.wave_plot.DefaultGridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.wave_plot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.wave_plot.ForeColor = System.Drawing.Color.WhiteSmoke;
-            plotLabelBasic2.DockOrder = 0;
-            plotLabelBasic2.Enabled = false;
-            plotLabelBasic2.Name = "Label 1";
-            plotLabelBasic2.TitleText = "Label 1";
-            plotLabelBasic2.Visible = false;
-            this.wave_plot.Labels.Add(plotLabelBasic2);
-            plotLegendBasic2.CanFocus = false;
-            plotLegendBasic2.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
-            plotLegendBasic2.DockDataViewName = "";
-            plotLegendBasic2.DockMargin = 0;
-            plotLegendBasic2.DockOrder = 0;
-            plotLegendBasic2.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
-            plotLegendBasic2.Name = "Legend 1";
-            plotLegendBasic2.Spacing = 4D;
-            plotLegendBasic2.TitleMargin = 0.5D;
-            plotLegendBasic2.TitleText = "Legend 1";
-            this.wave_plot.Legends.Add(plotLegendBasic2);
+            plotLabelBasic1.DockOrder = 0;
+            plotLabelBasic1.Enabled = false;
+            plotLabelBasic1.Name = "Label 1";
+            plotLabelBasic1.TitleText = "Label 1";
+            plotLabelBasic1.Visible = false;
+            this.wave_plot.Labels.Add(plotLabelBasic1);
+            plotLegendBasic1.CanFocus = false;
+            plotLegendBasic1.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
+            plotLegendBasic1.DockDataViewName = "";
+            plotLegendBasic1.DockMargin = 0;
+            plotLegendBasic1.DockOrder = 0;
+            plotLegendBasic1.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
+            plotLegendBasic1.Name = "Legend 1";
+            plotLegendBasic1.Spacing = 4D;
+            plotLegendBasic1.TitleMargin = 0.5D;
+            plotLegendBasic1.TitleText = "Legend 1";
+            this.wave_plot.Legends.Add(plotLegendBasic1);
             this.wave_plot.Location = new System.Drawing.Point(0, 28);
             this.wave_plot.Margin = new System.Windows.Forms.Padding(0);
             this.wave_plot.Name = "wave_plot";
             this.wave_plot.Size = new System.Drawing.Size(1015, 368);
             this.wave_plot.TabIndex = 0;
-            plotXAxis2.DockOrder = 0;
-            plotXAxis2.Name = "X-Axis 1";
-            plotXAxis2.ScaleDisplay.Margin = 0;
-            plotXAxis2.ScaleDisplay.TextFormatting.Precision = 0;
-            plotXAxis2.ScaleDisplay.TextWidthMinValue = 0D;
-            plotXAxis2.ScaleDisplay.TickMajor.Length = 6;
-            plotXAxis2.ScaleRange.Min = -1000D;
-            plotXAxis2.ScaleRange.Span = 2000D;
-            plotXAxis2.Title.Text = "X-Axis 1";
-            plotXAxis2.Tracking.AlignFirstStyle = Iocomp.Types.PlotTrackingAlignFirstStyle.None;
-            this.wave_plot.XAxes.Add(plotXAxis2);
-            plotYAxis2.DockOrder = 0;
-            plotYAxis2.Name = "Y-Axis 1";
-            plotYAxis2.ScaleDisplay.Margin = 0;
-            plotYAxis2.ScaleDisplay.TextFormatting.Precision = 0;
-            plotYAxis2.ScaleDisplay.TextWidthMinValue = 0D;
-            plotYAxis2.ScaleDisplay.TickMajor.Length = 6;
-            plotYAxis2.ScaleRange.Min = -1000D;
-            plotYAxis2.ScaleRange.Span = 2000D;
-            plotYAxis2.Title.Text = "Y-Axis 1";
-            plotYAxis2.Tracking.Style = Iocomp.Types.PlotTrackingStyle.ScrollSmooth;
-            this.wave_plot.YAxes.Add(plotYAxis2);
+            plotXAxis1.DockOrder = 0;
+            plotXAxis1.Name = "X-Axis 1";
+            plotXAxis1.ScaleDisplay.Margin = 0;
+            plotXAxis1.ScaleDisplay.TextFormatting.Precision = 0;
+            plotXAxis1.ScaleDisplay.TextWidthMinValue = 0D;
+            plotXAxis1.ScaleDisplay.TickMajor.Length = 6;
+            plotXAxis1.ScaleRange.Min = -1000D;
+            plotXAxis1.ScaleRange.Span = 2000D;
+            plotXAxis1.Title.Text = "X-Axis 1";
+            plotXAxis1.Tracking.AlignFirstStyle = Iocomp.Types.PlotTrackingAlignFirstStyle.None;
+            this.wave_plot.XAxes.Add(plotXAxis1);
+            plotYAxis1.DockOrder = 0;
+            plotYAxis1.Name = "Y-Axis 1";
+            plotYAxis1.ScaleDisplay.Margin = 0;
+            plotYAxis1.ScaleDisplay.TextFormatting.Precision = 0;
+            plotYAxis1.ScaleDisplay.TextWidthMinValue = 0D;
+            plotYAxis1.ScaleDisplay.TickMajor.Length = 6;
+            plotYAxis1.ScaleRange.Min = -1000D;
+            plotYAxis1.ScaleRange.Span = 2000D;
+            plotYAxis1.Title.Text = "Y-Axis 1";
+            plotYAxis1.Tracking.Style = Iocomp.Types.PlotTrackingStyle.ScrollSmooth;
+            this.wave_plot.YAxes.Add(plotYAxis1);
             this.wave_plot.LoadingEnd();
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(481, 444);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(591, 444);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(701, 444);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(811, 444);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "label8";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(261, 444);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(371, 444);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(151, 444);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 444);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            // 
-            // TabPage_data
-            // 
-            this.TabPage_data.BackColor = System.Drawing.Color.SlateGray;
-            this.TabPage_data.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabPage_data.Location = new System.Drawing.Point(0, 42);
-            this.TabPage_data.Name = "TabPage_data";
-            this.TabPage_data.Size = new System.Drawing.Size(1015, 522);
-            this.TabPage_data.TabIndex = 1;
-            this.TabPage_data.TabItemImage = null;
-            this.TabPage_data.Text = "数据";
-            // 
-            // TabPage_device
-            // 
-            this.TabPage_device.BackColor = System.Drawing.Color.SlateGray;
-            this.TabPage_device.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabPage_device.Location = new System.Drawing.Point(0, 42);
-            this.TabPage_device.Name = "TabPage_device";
-            this.TabPage_device.Size = new System.Drawing.Size(1015, 522);
-            this.TabPage_device.TabIndex = 2;
-            this.TabPage_device.TabItemImage = null;
-            this.TabPage_device.Text = "设备";
-            // 
-            // com_toolStrip
-            // 
-            this.com_toolStrip.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.com_toolStrip.BackColor = System.Drawing.Color.Transparent;
-            this.com_toolStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.com_toolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.com_toolStrip.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.com_toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.com_toolStrip.ImageScalingSize = new System.Drawing.Size(35, 35);
-            this.com_toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.com_port,
-            this.com_baudrate,
-            this.com_switch});
-            this.com_toolStrip.Location = new System.Drawing.Point(421, 2);
-            this.com_toolStrip.Name = "com_toolStrip";
-            this.com_toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.com_toolStrip.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.com_toolStrip.Size = new System.Drawing.Size(257, 42);
-            this.com_toolStrip.TabIndex = 4;
-            this.com_toolStrip.Text = "com_toolStrip";
-            // 
-            // com_port
-            // 
-            this.com_port.BackColor = System.Drawing.Color.White;
-            this.com_port.DropDownWidth = 200;
-            this.com_port.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.com_port.ForeColor = System.Drawing.Color.Black;
-            this.com_port.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
-            this.com_port.MaxLength = 200;
-            this.com_port.Name = "com_port";
-            this.com_port.Size = new System.Drawing.Size(100, 39);
-            this.com_port.Sorted = true;
-            this.com_port.Text = "AUTO";
-            this.com_port.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // com_baudrate
-            // 
-            this.com_baudrate.BackColor = System.Drawing.Color.White;
-            this.com_baudrate.ForeColor = System.Drawing.Color.Black;
-            this.com_baudrate.Items.AddRange(new object[] {
-            "9600",
-            "14400",
-            "19200",
-            "38400",
-            "57600",
-            "115200",
-            "128000",
-            "153600",
-            "230400",
-            "250000",
-            "256000",
-            "460800",
-            "500000",
-            "576000",
-            "625000"});
-            this.com_baudrate.Margin = new System.Windows.Forms.Padding(0, 1, 20, 2);
-            this.com_baudrate.Name = "com_baudrate";
-            this.com_baudrate.Size = new System.Drawing.Size(75, 39);
-            this.com_baudrate.Text = "115200";
-            this.com_baudrate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // com_switch
-            // 
-            this.com_switch.AutoToolTip = false;
-            this.com_switch.BackColor = System.Drawing.Color.Transparent;
-            this.com_switch.CheckOnClick = true;
-            this.com_switch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.com_switch.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.com_switch.Image = ((System.Drawing.Image)(resources.GetObject("com_switch.Image")));
-            this.com_switch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.com_switch.Name = "com_switch";
-            this.com_switch.Size = new System.Drawing.Size(39, 39);
-            this.com_switch.Text = "端口";
-            // 
-            // com_panel
-            // 
-            this.com_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.com_panel.BackColor = System.Drawing.Color.Transparent;
-            this.com_panel.Controls.Add(this.com_toolStrip);
-            this.com_panel.Location = new System.Drawing.Point(299, -1);
-            this.com_panel.Margin = new System.Windows.Forms.Padding(0);
-            this.com_panel.Name = "com_panel";
-            this.com_panel.Size = new System.Drawing.Size(709, 42);
-            this.com_panel.TabIndex = 5;
             // 
             // ah_tool
             // 

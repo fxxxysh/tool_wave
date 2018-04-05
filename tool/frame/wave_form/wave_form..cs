@@ -13,6 +13,20 @@ namespace tool.frame
     public class wave_form
     {
         public ah_tool _hander;
+        private Plot _plot;
+
+        struct wave_axes_s
+        {
+            public double x_min;
+            public double y_min;
+            public double x_max;
+            public double y_max;
+            public double x_span;
+            public double y_span;
+        };
+
+        bool track_sign = false;
+        bool cursor_sign = false;
 
         public wave_form(ah_tool hander)
         {
@@ -25,28 +39,22 @@ namespace tool.frame
         void event_init()
         {
             _hander._plotTool.MouseUp += new MouseEventHandler(plotTool_MouseUp);
-            _hander._plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
-            _hander._plot.MouseCaptureChanged += new EventHandler(plot_MouseCaptureChanged);
+            _hander. _plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
+            _plot.MouseCaptureChanged += new EventHandler(plot_MouseCaptureChanged);
         }
 
         void mode_init()
         {
+            _plot = _hander._plot;
+
             Thread th = new Thread(task)
             { Priority = ThreadPriority.AboveNormal, IsBackground = true };
             th.Start();
         }
 
-        struct wave_axes_s
-        {
-            public double x_min;
-            public double y_min;
-            public double x_span;
-            public double y_span;
-        };
-
         public PlotChannelTrace plot_channels(int channel)
         {
-            return (PlotChannelTrace)_hander._plot.Channels[channel];
+            return (PlotChannelTrace)_plot.Channels[channel];
         }
 
         public void plot_markers(bool state)
@@ -57,42 +65,85 @@ namespace tool.frame
             }
         }
 
+        void plot_zoom()
+        {
+            if ((_plot.XAxes[0].Span < 350) || (_plot.YAxes[0].Span < 350))
+            {
+                plot_markers(true);
+            }
+            else
+            {
+                plot_markers(false);
+            }
+        }
+
+        void plot_track()
+        {
+            if (cursor_sign)
+            {
+                int width_l = 50;
+                int width_r = 17;
+                double width = (_plot.Width - (width_l + width_r)); //L 46, R123
+
+                if (width < 1)
+                {
+                    width = 1;
+                }
+
+                _hander.Invoke(new Action(() => 
+                {
+                    //_plot.DataCursors.Channels[0].PositionX = (_plot.PointToClient(Control.MousePosition).X - width_l) / width;
+                }));
+            }
+        }
+
+        void test_set_label() 
+        {
+            Action<int, String> write = (ind, str) => { _hander._label[ind].Text = str; };
+            string[] lab_str = new string[10];
+
+            lab_str[0] = _plot.DataCursors.Channels[0].PositionX.ToString();
+        
+
+            _hander.Invoke(new Action(() => lab_str[1] = _plot.PointToClient(Control.MousePosition).X.ToString()));
+
+            //_plot.DataCursors.Channel[0].Pointer2Position.ToString();
+            //lab_str[2] = _plot.DataCursors.Channel[0].Pointer1.ToString();
+            //lab_str[3] = _plot.DataCursors.Channel[0].Pointer2.ToString();
+            //lab_str[4] = plot_channels(0).GetY(0).ToString();
+            //string st4 = _plot.DataCursors.XY[0]. .ToString();
+
+            //int cursorX = 0;// int.Parse(_plot.DataCursors.Channels[0].Hint.Text.Split(',')[0]);
+
+            for (int ind = 0; ind < 8; ind++)
+            {
+                _hander.Invoke(write,ind, lab_str[ind]);
+            }
+
+            // Invoke(write, 1, cursorX.ToString());
+            //tablex = plot_channels(0).DataCollection.X
+        }
+
         public void task()
         {
+            int loop = 0;
             Thread.Sleep(1000);
-            Action<int, String> write = (ind,str) => { _hander._label[ind].Text = str; };
-            string[] lab_str = new string[10] { "", "", "", "", "", "", "", "", "", "" };
 
             while (true)
             {
-                if ((_hander._plot.XAxes[0].Span < 350) || (_hander._plot.YAxes[0].Span < 350))
+                loop = (loop + 1) % 100;
+
+                if (loop % 10 == 0)
                 {
-                    plot_markers(true);
+                    get_wave_axes();
+                    plot_zoom();
                 }
-                else
-                {
-                    plot_markers(false);
-                }
+           
+                plot_track();
 
+                test_set_label();
 
-                lab_str[0] = "123";// _hander._plot.DataCursors.Channel[0].Pointer1Position.ToString();
-                //lab_str[1] = _hander._plot.DataCursors.Channel[0].Pointer2Position.ToString();
-                //lab_str[2] = _hander._plot.DataCursors.Channel[0].Pointer1.ToString();
-                //lab_str[3] = _hander._plot.DataCursors.Channel[0].Pointer2.ToString();
-                lab_str[4] = plot_channels(0).GetY(0).ToString();
-                //string st4 = _hander._plot.DataCursors.XY[0]. .ToString();
-
-                //int cursorX = 0;// int.Parse(_hander._plot.DataCursors.Channels[0].Hint.Text.Split(',')[0]);
-
-                for (int ind = 0; ind < 8; ind++)
-                {
-                    //_hander.Invoke(write,ind, lab_str[ind]);
-                }
-               
-               // _hander.Invoke(write, 1, cursorX.ToString());
-                //tablex = plot_channels(0).DataCollection.X
-                get_wave_axes();
-                Thread.Sleep(100);
+                Thread.Sleep(10);
             }
         }
 
@@ -103,41 +154,43 @@ namespace tool.frame
         {
             if (axes_sign == false)
             {
-                axes.x_min = _hander._plot.XAxes[0].Min;
-                axes.y_min = _hander._plot.YAxes[0].Min;
-                axes.x_span = _hander._plot.XAxes[0].Span;
-                axes.y_span = _hander._plot.YAxes[0].Span;
+                axes.x_min = _plot.XAxes[0].Min;
+                axes.y_min = _plot.YAxes[0].Min;
+                axes.x_max = _plot.XAxes[0].Max;
+                axes.y_max = _plot.YAxes[0].Max;
+                axes.x_span = _plot.XAxes[0].Span;
+                axes.y_span = _plot.YAxes[0].Span;
             }
         }
 
         void set_wave_axes()
         {
-            _hander._plot.XAxes[0].Min = axes.x_min;
-            _hander._plot.YAxes[0].Min = axes.y_min;
-            _hander._plot.XAxes[0].Span = axes.x_span;
-            _hander._plot.YAxes[0].Span = axes.y_span;
+            _plot.XAxes[0].Min = axes.x_min;
+            _plot.YAxes[0].Min = axes.y_min;
+            _plot.XAxes[0].Span = axes.x_span;
+            _plot.YAxes[0].Span = axes.y_span;
         }
 
         private void plot_MouseCaptureChanged(object sender, EventArgs e)
         {
             bool type = false;
-            if (_hander._plot.XAxes[0].Span < 500)
+            if (_plot.XAxes[0].Span < 500)
             {
                 type = true;
             }
 
             for (int i = 0; i < 10; i++)
             {
-                //_hander._plot.Channels[0].MarkersVisible = bl_val;
-                //_hander._plot.c
+                //_plot.Channels[0].MarkersVisible = bl_val;
+                //_plot.c
             }
         }
 
         private void plotTool_MouseUp(object sender, MouseEventArgs e)
         {
-            if (axes_sign == true)
+            if (track_sign == true)
             {
-                axes_sign = false;
+                track_sign = false;
                 set_wave_axes();
             }
         }
@@ -145,10 +198,21 @@ namespace tool.frame
         private void plotTool_ButtonClick(object sender, ToolBarButtonClickEventArgs e)
         {
             ToolBarButton button = e.Button;
-            if (e.Button == _hander._track)
+            if (e.Button == _hander._click_start_track)
             {
-                axes_sign = true;
+                track_sign = true;
+            }
 
+            if (e.Button == _hander._click_cursor)
+            {
+                if (cursor_sign)
+                {
+                    cursor_sign = false;
+                }
+                else
+                {
+                    cursor_sign = true;
+                }
             }
         }
     }
