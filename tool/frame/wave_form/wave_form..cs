@@ -14,6 +14,12 @@ namespace tool.frame
     {
         public ah_tool _hander;
         private Plot _plot;
+        private int channel_max;
+
+        wave_axes_s axes = new wave_axes_s();
+        bool axes_sign = false;
+        bool track_sign = false;
+        bool plot_active_sign = false;
 
         struct wave_axes_s
         {
@@ -23,14 +29,17 @@ namespace tool.frame
             public double y_max;
             public double x_span;
             public double y_span;
+
+            //public double width;
+            //public double height; 
         };
 
-        bool track_sign = false;
-        bool cursor_sign = false;
+        bool[] legend_sign = new bool[] { true, true, true, true, true, true, true, true, true, true };
 
         public wave_form(ah_tool hander)
         {
             _hander = hander;
+            channel_max = _hander.wave_channel_max;
 
             mode_init();
             event_init();
@@ -39,8 +48,37 @@ namespace tool.frame
         void event_init()
         {
             _hander._plotTool.MouseUp += new MouseEventHandler(plotTool_MouseUp);
-            _hander. _plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
-            _plot.MouseCaptureChanged += new EventHandler(plot_MouseCaptureChanged);
+            _hander._plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
+            _hander._plot.MouseEnter += new EventHandler(wave_plot_MouseEnter);
+            _hander._plot.MouseLeave += new EventHandler(wave_plot_MouseLeave);
+            _hander._plot.Click += new EventHandler(wave_plot_Click);
+        }
+
+        public void legend_click(int x, int y)
+        {
+            for (int ch = 0; ch < channel_max; ch++)
+            {
+                if ((x >= plot_channels(ch).LegendRectangle.X) &&
+                    (y >= plot_channels(ch).LegendRectangle.Y) &&
+                    (x <= plot_channels(ch).LegendRectangle.X + plot_channels(ch).LegendRectangle.Width) &&
+                    (y <= plot_channels(ch).LegendRectangle.Y + plot_channels(ch).LegendRectangle.Height))
+                {                
+                    plot_channels(ch).Trace.Visible = !plot_channels(ch).Trace.Visible;
+                    legend_sign[ch] = plot_channels(ch).Trace.Visible;
+                    return;
+                }
+            }
+        }
+
+        private void wave_plot_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs args = (MouseEventArgs)e;
+
+            int height = plot_channels(0).LegendRectangle.Y;
+            if (args.Y >= height)
+            {
+                legend_click(args.X, args.Y);
+            }
         }
 
         void mode_init()
@@ -79,20 +117,26 @@ namespace tool.frame
 
         void plot_track()
         {
-            if (cursor_sign)
+            bool pushed = false;
+            try {
+                _hander.Invoke(new Action(() => pushed = _hander._click_cursor.Pushed));
+            } catch { };
+
+            if ((pushed) && (plot_active_sign))
             {
                 int width_l = 50;
                 int width_r = 17;
+
                 double width = (_plot.Width - (width_l + width_r)); //L 46, R123
 
                 if (width < 1)
                 {
-                    width = 1;
+                    width = 1; 
                 }
 
                 _hander.Invoke(new Action(() => 
                 {
-                    //_plot.DataCursors.Channels[0].PositionX = (_plot.PointToClient(Control.MousePosition).X - width_l) / width;
+                    _plot.DataCursors.Channels[0].PositionX = (_plot.PointToClient(Control.MousePosition).X - width_l) / width;
                 }));
             }
         }
@@ -100,28 +144,31 @@ namespace tool.frame
         void test_set_label() 
         {
             Action<int, String> write = (ind, str) => { _hander._label[ind].Text = str; };
+            Action<int, int> lable_lock = (x, y) => { _hander._label[0].Location = new System.Drawing.Point(x, y); };
             string[] lab_str = new string[10];
+            
+            try
+            {
+                _hander.Invoke(new Action(() => lab_str[1] = _plot.PointToClient(Control.MousePosition).X.ToString()));
+            }
+            catch { };
 
-            lab_str[0] = _plot.DataCursors.Channels[0].PositionX.ToString();
-        
-
-            _hander.Invoke(new Action(() => lab_str[1] = _plot.PointToClient(Control.MousePosition).X.ToString()));
-
-            //_plot.DataCursors.Channel[0].Pointer2Position.ToString();
-            //lab_str[2] = _plot.DataCursors.Channel[0].Pointer1.ToString();
-            //lab_str[3] = _plot.DataCursors.Channel[0].Pointer2.ToString();
-            //lab_str[4] = plot_channels(0).GetY(0).ToString();
-            //string st4 = _plot.DataCursors.XY[0]. .ToString();
-
-            //int cursorX = 0;// int.Parse(_plot.DataCursors.Channels[0].Hint.Text.Split(',')[0]);
+            lab_str[0] = _hander._plot.Channels[0].LegendRectangle.Width.ToString();
+            lab_str[2] = _hander._plot.Channels[0].LegendRectangle.Height.ToString();
+            lab_str[3] = _hander._click_cursor.Enabled.ToString();
+            lab_str[4] = _hander._plot.Channels[0].LegendRectangle.X.ToString();
+            lab_str[5] = _hander._plot.Channels[0].LegendRectangle.Y.ToString();
+            lab_str[6] = _hander._plot.Width.ToString();
+            lab_str[7] = _hander._plot.Height.ToString();
 
             for (int ind = 0; ind < 8; ind++)
             {
-                _hander.Invoke(write,ind, lab_str[ind]);
+                try
+                {
+                    _hander.Invoke(write, ind, lab_str[ind]);
+                }
+                catch { };
             }
-
-            // Invoke(write, 1, cursorX.ToString());
-            //tablex = plot_channels(0).DataCollection.X
         }
 
         public void task()
@@ -130,10 +177,10 @@ namespace tool.frame
             Thread.Sleep(1000);
 
             while (true)
-            {
+            {  
                 loop = (loop + 1) % 100;
 
-                if (loop % 10 == 0)
+                if (loop % 5 == 0)
                 {
                     get_wave_axes();
                     plot_zoom();
@@ -141,14 +188,11 @@ namespace tool.frame
            
                 plot_track();
 
-                test_set_label();
+                //test_set_label();
 
-                Thread.Sleep(10);
+                Thread.Sleep(20);
             }
         }
-
-        wave_axes_s axes = new wave_axes_s();
-        bool axes_sign = false;
 
         void get_wave_axes()
         {
@@ -171,21 +215,6 @@ namespace tool.frame
             _plot.YAxes[0].Span = axes.y_span;
         }
 
-        private void plot_MouseCaptureChanged(object sender, EventArgs e)
-        {
-            bool type = false;
-            if (_plot.XAxes[0].Span < 500)
-            {
-                type = true;
-            }
-
-            for (int i = 0; i < 10; i++)
-            {
-                //_plot.Channels[0].MarkersVisible = bl_val;
-                //_plot.c
-            }
-        }
-
         private void plotTool_MouseUp(object sender, MouseEventArgs e)
         {
             if (track_sign == true)
@@ -201,19 +230,17 @@ namespace tool.frame
             if (e.Button == _hander._click_start_track)
             {
                 track_sign = true;
-            }
+            }    
+        }
+ 
+        private void wave_plot_MouseEnter(object sender, EventArgs e)
+        {
+            plot_active_sign = true;
+        }
 
-            if (e.Button == _hander._click_cursor)
-            {
-                if (cursor_sign)
-                {
-                    cursor_sign = false;
-                }
-                else
-                {
-                    cursor_sign = true;
-                }
-            }
+        private void wave_plot_MouseLeave(object sender, EventArgs e)
+        {
+            plot_active_sign = false;
         }
     }
 }

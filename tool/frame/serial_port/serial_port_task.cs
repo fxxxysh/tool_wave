@@ -18,7 +18,7 @@ namespace tool.frame
                 {
                     test_add_data();
                 }
-                Thread.Sleep(10);
+                Thread.Sleep(5);
             }
         }
 

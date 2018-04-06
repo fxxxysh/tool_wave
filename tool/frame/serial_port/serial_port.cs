@@ -49,7 +49,7 @@ namespace tool.frame
 
             //串口解析任务
             Thread th = new Thread(parse_task)
-            { Priority = ThreadPriority.AboveNormal, IsBackground = true };
+            { Priority = ThreadPriority.Highest, IsBackground = true };
             th.Start();
 
             //串口刷新任务

@@ -20,9 +20,12 @@ namespace tool
 {
     public partial class ah_tool : Form
     {
+        public int wave_channel_max = 10;
+
         public serial_port _serial; //串口
         public wave_form _wave; //波形窗口
         public List<Label> _list;
+        //public bool system_free = false;
 
         public List<Label> _label
         {
@@ -115,15 +118,9 @@ namespace tool
             _serial = new serial_port(this);
             _wave = new wave_form(this);
 
-            _list = new List<Label>();
-            _list.Add(label1);
-            _list.Add(label2);
-            _list.Add(label3);
-            _list.Add(label4);
-            _list.Add(label5);
-            _list.Add(label6);
-            _list.Add(label7);
-            _list.Add(label8);
+            // test
+            //_list = new List<Label>();
+            //_list.Add(label1);
 
             set_double_cache(wave_plot);
             set_double_cache(plotToolBar);
@@ -143,6 +140,9 @@ namespace tool
         // 窗口关闭
         private void ah_tool_FormClosing(object sender, FormClosingEventArgs e)
         {
+            this.Dispose(true);
+            this.Close();
+            Application.Exit();
             //System.Environment.Exit(0);
         }
     }

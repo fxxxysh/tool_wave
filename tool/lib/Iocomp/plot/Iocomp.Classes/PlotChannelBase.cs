@@ -23,7 +23,7 @@ namespace Iocomp.Classes
 
 		protected string m_DeliminatorChar;
 
-		private Rectangle m_LegendRectangle;
+		public Rectangle m_LegendRectangle;
 
 		protected PlotChannelDataCollection m_Data;
 
