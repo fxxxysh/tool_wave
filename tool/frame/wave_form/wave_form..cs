@@ -45,42 +45,6 @@ namespace tool.frame
             event_init();
         }
 
-        void event_init()
-        {
-            _hander._plotTool.MouseUp += new MouseEventHandler(plotTool_MouseUp);
-            _hander._plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
-            _hander._plot.MouseEnter += new EventHandler(wave_plot_MouseEnter);
-            _hander._plot.MouseLeave += new EventHandler(wave_plot_MouseLeave);
-            _hander._plot.Click += new EventHandler(wave_plot_Click);
-        }
-
-        public void legend_click(int x, int y)
-        {
-            for (int ch = 0; ch < channel_max; ch++)
-            {
-                if ((x >= plot_channels(ch).LegendRectangle.X) &&
-                    (y >= plot_channels(ch).LegendRectangle.Y) &&
-                    (x <= plot_channels(ch).LegendRectangle.X + plot_channels(ch).LegendRectangle.Width) &&
-                    (y <= plot_channels(ch).LegendRectangle.Y + plot_channels(ch).LegendRectangle.Height))
-                {                
-                    plot_channels(ch).Trace.Visible = !plot_channels(ch).Trace.Visible;
-                    legend_sign[ch] = plot_channels(ch).Trace.Visible;
-                    return;
-                }
-            }
-        }
-
-        private void wave_plot_Click(object sender, EventArgs e)
-        {
-            MouseEventArgs args = (MouseEventArgs)e;
-
-            int height = plot_channels(0).LegendRectangle.Y;
-            if (args.Y >= height)
-            {
-                legend_click(args.X, args.Y);
-            }
-        }
-
         void mode_init()
         {
             _plot = _hander._plot;
@@ -90,11 +54,44 @@ namespace tool.frame
             th.Start();
         }
 
+        void event_init()
+        {
+            _hander._plotTool.MouseUp += new MouseEventHandler(plotTool_MouseUp);
+            _hander._plotTool.ButtonClick += new ToolBarButtonClickEventHandler(plotTool_ButtonClick);
+            _hander._plot.MouseEnter += new EventHandler(wave_plot_MouseEnter);
+            _hander._plot.MouseLeave += new EventHandler(wave_plot_MouseLeave);
+            _hander._plot.Click += new EventHandler(wave_plot_Click);
+        }
+
+        public void task()
+        {
+            int loop = 0;
+            Thread.Sleep(1000);
+
+            while (true)
+            {
+                loop = (loop + 1) % 100;
+
+                if (loop % 5 == 0)
+                {
+                    get_wave_axes();
+                    plot_zoom();
+                }
+
+                plot_track();
+
+                //test_set_label();
+
+                Thread.Sleep(20);
+            }
+        }
+
         public PlotChannelTrace plot_channels(int channel)
         {
             return (PlotChannelTrace)_plot.Channels[channel];
         }
 
+        // plot 显示type设置
         public void plot_markers(bool state)
         {
             for (int channel = 0; channel < 10; channel++)
@@ -102,7 +99,7 @@ namespace tool.frame
                 plot_channels(channel).Markers.Visible = state;
             }
         }
-
+       
         void plot_zoom()
         {
             if ((_plot.XAxes[0].Span < 350) || (_plot.YAxes[0].Span < 350))
@@ -115,6 +112,7 @@ namespace tool.frame
             }
         }
 
+        // 光标跟踪
         void plot_track()
         {
             bool pushed = false;
@@ -141,6 +139,7 @@ namespace tool.frame
             }
         }
 
+        // test
         void test_set_label() 
         {
             Action<int, String> write = (ind, str) => { _hander._label[ind].Text = str; };
@@ -171,29 +170,24 @@ namespace tool.frame
             }
         }
 
-        public void task()
+        // legend 点击处理
+        public void legend_click(int x, int y)
         {
-            int loop = 0;
-            Thread.Sleep(1000);
-
-            while (true)
-            {  
-                loop = (loop + 1) % 100;
-
-                if (loop % 5 == 0)
+            for (int ch = 0; ch < channel_max; ch++)
+            {
+                if ((x >= plot_channels(ch).LegendRectangle.X) &&
+                    (y >= plot_channels(ch).LegendRectangle.Y) &&
+                    (x <= plot_channels(ch).LegendRectangle.X + plot_channels(ch).LegendRectangle.Width) &&
+                    (y <= plot_channels(ch).LegendRectangle.Y + plot_channels(ch).LegendRectangle.Height))
                 {
-                    get_wave_axes();
-                    plot_zoom();
+                    plot_channels(ch).Trace.Visible = !plot_channels(ch).Trace.Visible;
+                    legend_sign[ch] = plot_channels(ch).Trace.Visible;
+                    return;
                 }
-           
-                plot_track();
-
-                //test_set_label();
-
-                Thread.Sleep(20);
             }
         }
 
+        // 获取缩放轴
         void get_wave_axes()
         {
             if (axes_sign == false)
@@ -207,6 +201,7 @@ namespace tool.frame
             }
         }
 
+        // 设置缩放轴
         void set_wave_axes()
         {
             _plot.XAxes[0].Min = axes.x_min;
@@ -232,7 +227,7 @@ namespace tool.frame
                 track_sign = true;
             }    
         }
- 
+        
         private void wave_plot_MouseEnter(object sender, EventArgs e)
         {
             plot_active_sign = true;
@@ -241,6 +236,17 @@ namespace tool.frame
         private void wave_plot_MouseLeave(object sender, EventArgs e)
         {
             plot_active_sign = false;
+        }
+        
+        private void wave_plot_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs args = (MouseEventArgs)e;
+
+            int height = plot_channels(0).LegendRectangle.Y;
+            if (args.Y >= height)
+            {
+                legend_click(args.X, args.Y);
+            }
         }
     }
 }

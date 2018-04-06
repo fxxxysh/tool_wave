@@ -9,20 +9,26 @@ namespace tool.frame
 {
     public partial class serial_port
     {
+        public int plot_axis_x = 0;
+
         public void parse_task()
         {
             test_add_data();
             while (true)
             {
-                if (_serialPort.IsOpen == true)
+                if (_serialPort.IsOpen && serial_var.receive)
                 {
-                    test_add_data();
+                    //test_add_data();
+                    serial_var.receiving = true;
+                    serial_data_read();
+                    serial_var.receiving = false;
+
                 }
-                Thread.Sleep(5);
+                Thread.Sleep(40);
             }
         }
 
-        public void refresh_task()
+        public void port_refresh_task()
         {
             while (true)
             {
@@ -31,37 +37,30 @@ namespace tool.frame
             }
         }
 
-        int plot_x = 0;
-        int cnt = 0;
-        void test_add_data()
+        public void serial_data_read()
         {
-            cnt++;
-            for (int x = 0; x < 10; x++)
+            int size = _serialPort.BytesToRead;
+            if (size != 0)
             {
-                _plot.Channels[x].AddXY(plot_x, 100 * Math.Sin((cnt % 360) * 6.28 / 360) + x * 100);
+                if (size > 4096)
+                {
+                    size = 4096;
+                }
+                _serialPort.Read(serial_var.receive_cache, 0, size);
+                serial_var.receive_byte += size;
             }
-            plot_x++;
         }
 
-        int[] data_y = new int[100];
-        int[] data_x1 = new int[100];
-        void test_add_arry()
+        //测试波形
+        int test_cnt = 0;
+        void test_add_data()
         {
-            for (int x_cnt = 0; x_cnt < 100; x_cnt++)
-            {
-                cnt++;
-
-                for (int x = 0; x < 10; x++)
-                {
-                    data_y[x_cnt] = cnt % 100 + x * 10;
-                }
-                data_x1[x_cnt] = data_x1[99] + 1 + x_cnt;
-            }
-
+            test_cnt++;
             for (int x = 0; x < 10; x++)
             {
-                _plot.Channels[x].AddDataArray(data_x1, data_y);
+                _plot.Channels[x].AddXY(plot_axis_x, 100 * Math.Sin((test_cnt % 360) * 6.28 / 360) + x * 100);
             }
+            plot_axis_x++;
         }
 
         // 串口开关

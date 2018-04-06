@@ -13,7 +13,7 @@ using tool.modules;
 
 namespace tool.frame
 {
-    public partial class serial_port : protocol
+    public partial class serial_port : comlink
     {
         private SerialPort _serialPort; //串口控件
         private Plot _plot; //示波器控件
@@ -25,7 +25,27 @@ namespace tool.frame
         public ToolStripComboBox _com_baudrate;
         public ToolStripButton _com_switch;
 
-        public bool receiving = false;
+        struct serial_var_s
+        {
+            public bool receiving;
+            public bool receive;
+
+            public int receive_byte;
+            public int send_byte;
+
+            public Byte[] receive_cache;
+
+            public serial_var_s(bool status)
+            {
+                receiving = false;
+                receive = false;
+                receive_byte = 0;
+                send_byte = 0;
+
+                receive_cache = new Byte[4096];
+            }
+        };
+        serial_var_s serial_var = new serial_var_s(false);
 
         public serial_port(ah_tool hander) : base()
         {
@@ -53,16 +73,15 @@ namespace tool.frame
             th.Start();
 
             //串口刷新任务
-            Thread th1 = new Thread(refresh_task)
+            Thread th1 = new Thread(port_refresh_task)
             { Priority = ThreadPriority.BelowNormal, IsBackground = true };
             th1.Start();
         }
 
         void event_init()
         {
-            //_serialPort.DataReceived += new SerialDataReceivedEventHandler(com_111);
+            //_serialPort.DataReceived += new SerialDataReceivedEventHandler(serialPort_read);
             _com_switch.Click += new System.EventHandler(com_switch_Click);
-           // _com_port.DropDown += new System.EventHandler(com_port_DropDown);
             _com_port.DropDownClosed += new System.EventHandler(com_port_DropDownClosed);
         }
 
@@ -132,16 +151,19 @@ namespace tool.frame
                     _serialPort.BaudRate = int.Parse(baudrate);
                     _serialPort.Open();
                     status = true;
+                    serial_var.receive = true;
                 }
                 catch
                 {
                     MessageBox.Show(_serialPort.PortName + "被占用！");
                     status = false;
+                    serial_var.receive = false;
                 }
             }
             else
             {
-                while (receiving == true)
+                serial_var.receive = false;
+                while (serial_var.receiving)
                 {
                     Application.DoEvents();
                 }

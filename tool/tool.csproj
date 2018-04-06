@@ -48,10 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\SkinUI\CSkin.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -1106,9 +1102,10 @@
     <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotUnitType.cs" />
     <Compile Include="lib\Iocomp\plot\Iocomp.Types\PlotXValueTextDateTimeFormat.cs" />
     <Compile Include="lib\Iocomp\plot\PlotToolBarIcons\Access.cs" />
+    <Compile Include="modules\comlink\comlink_msg.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="frame\serial_port\serial_port.cs" />
-    <Compile Include="modules\protocol\protocol.cs" />
+    <Compile Include="modules\comlink\comlink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ah_tool.resx">
       <DependentUpon>ah_tool.cs</DependentUpon>
@@ -1305,6 +1302,7 @@
     <Folder Include="modules\wave\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="comlink.dll" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08DN.ICO" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08UP.ICO" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARWHEAD.ICO" />
