@@ -5,24 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using Iocomp.Instrumentation.Plotting;
+using System.Runtime.InteropServices;
 using tool;
 
 namespace tool.modules
 {
-    public partial class comlink
+    public partial class s_comlink
     {
-        public comlink()
+        [DllImport("../../../Debug/comlink.dll", EntryPoint = "comlink_parse", CallingConvention = CallingConvention.Cdecl)]
+        extern static bool comlink_parse(byte[] buffer, int buffer_size);
+
+        [DllImport("../../../Debug/comlink.dll", EntryPoint = "comlink_get_msg", CallingConvention = CallingConvention.Cdecl)]
+        extern static bool comlink_get_msg(byte[] msg_number, byte[] now_msg,
+            UInt16[] len, byte[] payload, byte[] seq, byte[] sysid, byte[] compid, byte[] msgid);
+
+        public s_comlink()
         {
+
         }
 
-        public void write_lable(int cnt)
+        public bool parse(byte[] buffer, int size)
         {
-            // _handler.Invoke(new Action(() => { write_lable(cnt); }));
-            //Action<int> write = (count) => { _handler.lable_func(count.ToString()); };
-            //_handler.Invoke(write, cnt);
+            //byte[] buff123 = new byte[10];
 
-            //Action<int> write = (count) => { _handler.; };
-            //_handler.Invoke(write, cnt);
+            bool m = comlink_parse(buffer, size);
+
+            return true;
         }
     }
 }

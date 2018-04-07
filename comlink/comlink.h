@@ -8,22 +8,9 @@
 #define DLL_API __declspec(dllimport)
 #endif
 
-__declspec(dllexport) int ttt_add(int x, int y);
+#include "stdint.h"
 
+DLL_API bool comlink_parse(uint8_t *buffer, int buffer_size);
 
-//class DLL_API CDllDemo {
-//public:
-//	CDllDemo(void);
-//	// TODO:  在此添加您的方法。
-//};
-//
-//extern DLL_API int nDllDemo;
-//extern "C" extern DLL_API int nExternCDllDemo;
-//
-//DLL_API int fnDllDemo(void);
-//extern "C" DLL_API int fnExternCDllDemo(void);
-//
-//char DLL_API fnDefault(char, int, float);
-//char DLL_API __stdcall fnstdcall(char, int, float);
-//char DLL_API __cdecl fncdecl(char, int, float);
-//char DLL_API __fastcall fnfastcall(char, int, float);
+DLL_API bool comlink_get_msg(uint8_t* msg_number, uint8_t* now_msg,
+	uint16_t* len, uint8_t* payload, uint8_t* seq, uint8_t* sysid, uint8_t* compid, uint8_t* msgid);

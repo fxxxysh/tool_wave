@@ -13,13 +13,7 @@ using System.IO.Ports;
 using System.Text.RegularExpressions;
 using Iocomp.Instrumentation.Plotting;
 using Iocomp.Classes;
-
 using tool.frame;
-
-//using System.Runtime.InteropServices;
-
-//[DllImport("H:/git/tool_wave/Debug/comlink.dll")]
-//public static extern int SetSystemTime(ref SystemTime lpSystemTime);
 
 namespace tool
 {
@@ -118,20 +112,16 @@ namespace tool
             th_start.Start();
         }
 
-        //[DllImport(@"../Debug/comlink.dll", EntryPoint = "ttt_add", SetLastError = true, CharSet = CharSet.Ansi, ExactSpelling = false, CallingConvention = CallingConvention.StdCall)]
-        //extern static int ttt_add(int x, int y);
-
         // 挂载
         private void mount()
         {
             _serial = new serial_port(this);
             _wave = new wave_form(this);
 
-         //   int m = ttt_add(1, 2);
             // test
             //_list = new List<Label>();
             //_list.Add(label1);
-
+           
             set_double_cache(wave_plot);
             set_double_cache(plotToolBar);
         }

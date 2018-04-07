@@ -22,7 +22,7 @@ namespace tool.frame
                     serial_var.receiving = true;
                     serial_data_read();
                     serial_var.receiving = false;
-
+                    parse(serial_var.receive_cache, serial_var.receive_byte);
                 }
                 Thread.Sleep(40);
             }
@@ -39,15 +39,15 @@ namespace tool.frame
 
         public void serial_data_read()
         {
-            int size = _serialPort.BytesToRead;
-            if (size != 0)
+            serial_var.receive_cache_size = _serialPort.BytesToRead;
+            if (serial_var.receive_cache_size != 0)
             {
-                if (size > 4096)
+                if (serial_var.receive_cache_size > 4096)
                 {
-                    size = 4096;
+                    serial_var.receive_cache_size = 4096;
                 }
-                _serialPort.Read(serial_var.receive_cache, 0, size);
-                serial_var.receive_byte += size;
+                _serialPort.Read(serial_var.receive_cache, 0, serial_var.receive_cache_size);
+                serial_var.receive_byte += serial_var.receive_cache_size;
             }
         }
 

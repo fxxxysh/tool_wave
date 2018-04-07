@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tool.modules
 {
-    public partial class comlink
+    public partial class s_comlink
     {
         static byte MAVLINK_STX_MAVLINK1 = 0xFE;
         static byte MAVLINK_MAX_PAYLOAD_LEN = 255;

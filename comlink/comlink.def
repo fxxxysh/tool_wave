@@ -1,3 +1,4 @@
 LIBRARY
 EXPORTS
-	ttt_add
+	comlink_parse
+	comlink_get_msg

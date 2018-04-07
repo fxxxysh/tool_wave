@@ -13,7 +13,7 @@ using tool.modules;
 
 namespace tool.frame
 {
-    public partial class serial_port : comlink
+    public partial class serial_port : s_comlink
     {
         private SerialPort _serialPort; //串口控件
         private Plot _plot; //示波器控件
@@ -34,6 +34,7 @@ namespace tool.frame
             public int send_byte;
 
             public Byte[] receive_cache;
+            public int receive_cache_size;
 
             public serial_var_s(bool status)
             {
@@ -41,6 +42,7 @@ namespace tool.frame
                 receive = false;
                 receive_byte = 0;
                 send_byte = 0;
+                receive_cache_size = 0;
 
                 receive_cache = new Byte[4096];
             }
