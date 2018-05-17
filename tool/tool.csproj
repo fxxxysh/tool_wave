@@ -1307,7 +1307,6 @@
     <Folder Include="modules\wave\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="comlink.dll" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08DN.ICO" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARW08UP.ICO" />
     <Content Include="lib\Iocomp\common\ToolboxBitmaps\ARWHEAD.ICO" />
